@@ -1,0 +1,638 @@
+# wpban Pro Language Template
+# Copyright (C) 2024 WPBan
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wpban Pro 5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpban\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-01-01T00:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: wpban\n"
+
+#. Plugin Name of the plugin
+msgid "wpban Pro"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wpban.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Advanced WordPress security with geo-blocking, rate limiting, and intelligent threat detection."
+msgstr ""
+
+#. Author of the plugin
+msgid "WPBan"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpban.com"
+msgstr ""
+
+#: includes/class-wpban-admin.php:30
+msgid "WPBan Security"
+msgstr ""
+
+#: includes/class-wpban-admin.php:38
+msgid "Settings"
+msgstr ""
+
+#: includes/class-wpban-admin.php:46
+msgid "Security Logs"
+msgstr ""
+
+#: includes/class-wpban-admin.php:47
+msgid "Logs"
+msgstr ""
+
+#: includes/class-wpban-admin.php:54
+msgid "Tools"
+msgstr ""
+
+#: includes/class-wpban-admin.php:80
+msgid "Are you sure you want to clear all logs?"
+msgstr ""
+
+#: includes/class-wpban-admin.php:81
+msgid "This will replace your current settings. Continue?"
+msgstr ""
+
+#: includes/class-wpban-admin.php:82
+msgid "Test email sent!"
+msgstr ""
+
+#: includes/class-wpban-admin.php:83
+msgid "An error occurred"
+msgstr ""
+
+#: includes/class-wpban-admin.php:95
+msgid "WPBan Security Dashboard"
+msgstr ""
+
+#: includes/class-wpban-admin.php:101
+msgid "Total Blocks"
+msgstr ""
+
+#: includes/class-wpban-admin.php:115
+msgid "Unique IPs"
+msgstr ""
+
+#: includes/class-wpban-admin.php:120
+msgid "Today's Blocks"
+msgstr ""
+
+#: includes/class-wpban-admin.php:125
+msgid "Active Rules"
+msgstr ""
+
+#: includes/class-wpban-admin.php:134
+msgid "Quick Actions"
+msgstr ""
+
+#: includes/class-wpban-admin.php:136
+msgid "Emergency Bypass URL:"
+msgstr ""
+
+#: includes/class-wpban-admin.php:142
+msgid "Copy"
+msgstr ""
+
+#: includes/class-wpban-admin.php:145
+msgid "Save this URL to access your site if you get locked out."
+msgstr ""
+
+#: includes/class-wpban-admin.php:150
+msgid "Configure Settings"
+msgstr ""
+
+#: includes/class-wpban-admin.php:153
+msgid "View Logs"
+msgstr ""
+
+#: includes/class-wpban-admin.php:160
+msgid "Top Blocked Countries"
+msgstr ""
+
+#: includes/class-wpban-admin.php:187
+msgid "Security Templates"
+msgstr ""
+
+#: includes/class-wpban-admin.php:188
+msgid "Quickly apply pre-configured security settings."
+msgstr ""
+
+#: includes/class-wpban-admin.php:195
+msgid "Apply"
+msgstr ""
+
+#: includes/class-wpban-admin.php:204
+msgid "Recent Activity"
+msgstr ""
+
+#: includes/class-wpban-admin.php:209 includes/class-wpban-admin.php:468
+msgid "Time"
+msgstr ""
+
+#: includes/class-wpban-admin.php:210 includes/class-wpban-admin.php:469
+msgid "IP"
+msgstr ""
+
+#: includes/class-wpban-admin.php:211 includes/class-wpban-admin.php:470
+msgid "Country"
+msgstr ""
+
+#: includes/class-wpban-admin.php:212 includes/class-wpban-admin.php:471
+msgid "Action"
+msgstr ""
+
+#: includes/class-wpban-admin.php:213 includes/class-wpban-admin.php:472
+msgid "Details"
+msgstr ""
+
+#: includes/class-wpban-admin.php:236
+msgid "WPBan Security Settings"
+msgstr ""
+
+#: includes/class-wpban-admin.php:243
+msgid "General"
+msgstr ""
+
+#: includes/class-wpban-admin.php:244
+msgid "IP Rules"
+msgstr ""
+
+#: includes/class-wpban-admin.php:245
+msgid "Advanced"
+msgstr ""
+
+#: includes/class-wpban-admin.php:246
+msgid "Rate Limiting"
+msgstr ""
+
+#: includes/class-wpban-admin.php:247
+msgid "Geo Blocking"
+msgstr ""
+
+#: includes/class-wpban-admin.php:248
+msgid "Crawlers"
+msgstr ""
+
+#: includes/class-wpban-admin.php:249
+msgid "Notifications"
+msgstr ""
+
+#: includes/class-wpban-admin.php:256
+msgid "Enable Logging"
+msgstr ""
+
+#: includes/class-wpban-admin.php:261
+msgid "Log all security events"
+msgstr ""
+
+#: includes/class-wpban-admin.php:266
+msgid "Reverse Proxy"
+msgstr ""
+
+#: includes/class-wpban-admin.php:271
+msgid "Server is behind a reverse proxy (Cloudflare, nginx, etc.)"
+msgstr ""
+
+#: includes/class-wpban-admin.php:276
+msgid "Ban Message"
+msgstr ""
+
+#: includes/class-wpban-admin.php:287
+msgid "Variables: %IP%, %DATE%, %SITE%"
+msgstr ""
+
+#: includes/class-wpban-admin.php:295
+msgid "Banned IPs"
+msgstr ""
+
+#: includes/class-wpban-admin.php:300
+msgid "One per line. Use * for wildcards (e.g., 192.168.*.*)"
+msgstr ""
+
+#: includes/class-wpban-admin.php:304
+msgid "IP Ranges"
+msgstr ""
+
+#: includes/class-wpban-admin.php:309
+msgid "CIDR: 192.168.0.0/24 or Range: 192.168.0.1-192.168.0.255"
+msgstr ""
+
+#: includes/class-wpban-admin.php:313
+msgid "Whitelist IPs"
+msgstr ""
+
+#: includes/class-wpban-admin.php:318
+msgid "These IPs will never be blocked"
+msgstr ""
+
+#: includes/class-wpban-admin.php:322
+msgid "Login Protection"
+msgstr ""
+
+#: includes/class-wpban-admin.php:327
+msgid "Only these IPs can access wp-login.php (leave empty to allow all)"
+msgstr ""
+
+#: includes/class-wpban-admin.php:336
+msgid "Banned Hosts"
+msgstr ""
+
+#: includes/class-wpban-admin.php:341
+msgid "e.g., *.badhost.com"
+msgstr ""
+
+#: includes/class-wpban-admin.php:345
+msgid "Banned Referers"
+msgstr ""
+
+#: includes/class-wpban-admin.php:352
+msgid "Banned User Agents"
+msgstr ""
+
+#: includes/class-wpban-admin.php:359
+msgid "Browser Restrictions"
+msgstr ""
+
+#: includes/class-wpban-admin.php:365
+msgid "Block WeChat/QQ Browsers"
+msgstr ""
+
+#: includes/class-wpban-admin.php:375
+msgid "Rate Limiting Settings"
+msgstr ""
+
+#: includes/class-wpban-admin.php:376
+msgid "Protect against floods and brute force attacks by limiting request rates."
+msgstr ""
+
+#: includes/class-wpban-admin.php:380
+msgid "General Requests"
+msgstr ""
+
+#: includes/class-wpban-admin.php:385
+msgid "requests per minute"
+msgstr ""
+
+#: includes/class-wpban-admin.php:389
+msgid "Login Attempts"
+msgstr ""
+
+#: includes/class-wpban-admin.php:394
+msgid "attempts per hour"
+msgstr ""
+
+#: includes/class-wpban-admin.php:398
+msgid "API Requests"
+msgstr ""
+
+#: includes/class-wpban-admin.php:410
+msgid "Geographic Blocking"
+msgstr ""
+
+#: includes/class-wpban-admin.php:414
+msgid "Enable Geo Blocking"
+msgstr ""
+
+#: includes/class-wpban-admin.php:419
+msgid "Block or allow access based on country"
+msgstr ""
+
+#: includes/class-wpban-admin.php:424
+msgid "Block Mode"
+msgstr ""
+
+#: includes/class-wpban-admin.php:429
+msgid "Block selected countries"
+msgstr ""
+
+#: includes/class-wpban-admin.php:434
+msgid "Allow only selected countries"
+msgstr ""
+
+#: includes/class-wpban-admin.php:439
+msgid "Countries"
+msgstr ""
+
+#: includes/class-wpban-admin.php:454
+msgid "Hold Ctrl/Cmd to select multiple countries"
+msgstr ""
+
+#: includes/class-wpban-admin.php:463
+msgid "Select All AI"
+msgstr ""
+
+#: includes/class-wpban-admin.php:466
+msgid "Select All SEO"
+msgstr ""
+
+#: includes/class-wpban-admin.php:469
+msgid "Deselect All"
+msgstr ""
+
+#: includes/class-wpban-admin.php:479
+msgid "AI Crawlers"
+msgstr ""
+
+#: includes/class-wpban-admin.php:494
+msgid "SEO Crawlers"
+msgstr ""
+
+#: includes/class-wpban-admin.php:496
+msgid "⚠️ Blocking SEO crawlers may affect your search engine rankings!"
+msgstr ""
+
+#: includes/class-wpban-admin.php:516
+msgid "Enable Email Notifications"
+msgstr ""
+
+#: includes/class-wpban-admin.php:521
+msgid "Send email alerts for security events"
+msgstr ""
+
+#: includes/class-wpban-admin.php:526
+msgid "Recipient Email"
+msgstr ""
+
+#: includes/class-wpban-admin.php:532
+msgid "Send Test Email"
+msgstr ""
+
+#: includes/class-wpban-admin.php:537
+msgid "Alert Threshold"
+msgstr ""
+
+#: includes/class-wpban-admin.php:542
+msgid "Send alert after this many blocks from same IP"
+msgstr ""
+
+#: includes/class-wpban-admin.php:546
+msgid "Alert Events"
+msgstr ""
+
+#: includes/class-wpban-admin.php:549
+msgid "Rate limit exceeded"
+msgstr ""
+
+#: includes/class-wpban-admin.php:550
+msgid "Geographic block"
+msgstr ""
+
+#: includes/class-wpban-admin.php:551
+msgid "Brute force attempt"
+msgstr ""
+
+#: includes/class-wpban-admin.php:552
+msgid "Crawler blocked"
+msgstr ""
+
+#: includes/class-wpban-admin.php:571
+msgid "Save Settings"
+msgstr ""
+
+#: includes/class-wpban-admin.php:597
+msgid "From date"
+msgstr ""
+
+#: includes/class-wpban-admin.php:600
+msgid "To date"
+msgstr ""
+
+#: includes/class-wpban-admin.php:603
+msgid "All Actions"
+msgstr ""
+
+#: includes/class-wpban-admin.php:604
+msgid "Banned"
+msgstr ""
+
+#: includes/class-wpban-admin.php:605
+msgid "Blocked"
+msgstr ""
+
+#: includes/class-wpban-admin.php:606
+msgid "Failed Login"
+msgstr ""
+
+#: includes/class-wpban-admin.php:607
+msgid "Bypass Used"
+msgstr ""
+
+#: includes/class-wpban-admin.php:611
+msgid "IP Address"
+msgstr ""
+
+#: includes/class-wpban-admin.php:614
+msgid "Country Code"
+msgstr ""
+
+#: includes/class-wpban-admin.php:616
+msgid "Filter"
+msgstr ""
+
+#: includes/class-wpban-admin.php:617
+msgid "Reset"
+msgstr ""
+
+#: includes/class-wpban-admin.php:620
+msgid "Export CSV"
+msgstr ""
+
+#: includes/class-wpban-admin.php:624
+msgid "Clear Logs"
+msgstr ""
+
+#: includes/class-wpban-admin.php:638
+msgid "User Agent"
+msgstr ""
+
+#: includes/class-wpban-admin.php:639
+msgid "URI"
+msgstr ""
+
+#: includes/class-wpban-admin.php:645
+msgid "No logs found."
+msgstr ""
+
+#: includes/class-wpban-admin.php:688
+msgid "WPBan Tools"
+msgstr ""
+
+#: includes/class-wpban-admin.php:694
+msgid "Import/Export Settings"
+msgstr ""
+
+#: includes/class-wpban-admin.php:695
+msgid "Backup your settings or migrate to another site."
+msgstr ""
+
+#: includes/class-wpban-admin.php:697
+msgid "Export"
+msgstr ""
+
+#: includes/class-wpban-admin.php:700
+msgid "Download Settings"
+msgstr ""
+
+#: includes/class-wpban-admin.php:704
+msgid "Import"
+msgstr ""
+
+#: includes/class-wpban-admin.php:714
+msgid "Import Settings"
+msgstr ""
+
+#: includes/class-wpban-admin.php:722
+msgid "Database Maintenance"
+msgstr ""
+
+#: includes/class-wpban-admin.php:723
+msgid "Optimize your WPBan database tables."
+msgstr ""
+
+#: includes/class-wpban-admin.php:736
+msgid "Total Log Entries"
+msgstr ""
+
+#: includes/class-wpban-admin.php:740
+msgid "Database Size"
+msgstr ""
+
+#: includes/class-wpban-admin.php:747
+msgid "Optimize Tables"
+msgstr ""
+
+#: includes/class-wpban-admin.php:751
+msgid "Clear Logs Older Than 30 Days"
+msgstr ""
+
+#: includes/class-wpban-admin.php:758
+msgid "System Information"
+msgstr ""
+
+#: includes/class-wpban-admin.php:829
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: includes/class-wpban-admin.php:844
+msgid "Invalid template"
+msgstr ""
+
+#: includes/class-wpban-admin.php:853
+msgid "Template applied successfully!"
+msgstr ""
+
+#: includes/class-wpban-admin.php:928
+msgid "Logs cleared successfully!"
+msgstr ""
+
+#: includes/class-wpban-admin.php:949
+msgid "Test email sent successfully!"
+msgstr ""
+
+#: includes/class-wpban-admin.php:951
+msgid "Failed to send test email. Please check your email settings."
+msgstr ""
+
+#: includes/class-wpban-security.php:109
+msgid "Too many requests. Please try again later."
+msgstr ""
+
+#: includes/class-wpban-security.php:144
+#: includes/class-wpban-security.php:152
+msgid "Access denied from your location."
+msgstr ""
+
+#: includes/class-wpban-security.php:415
+msgid "Basic Protection"
+msgstr ""
+
+#: includes/class-wpban-security.php:416
+msgid "Essential security for most WordPress sites"
+msgstr ""
+
+#: includes/class-wpban-security.php:427
+msgid "Strict Security"
+msgstr ""
+
+#: includes/class-wpban-security.php:428
+msgid "Maximum protection with geo-blocking and rate limiting"
+msgstr ""
+
+#: includes/class-wpban-security.php:443
+msgid "Content Protection"
+msgstr ""
+
+#: includes/class-wpban-security.php:444
+msgid "Protect content from AI and scraping"
+msgstr ""
+
+#: includes/class-wpban-security.php:454
+msgid "Performance Mode"
+msgstr ""
+
+#: includes/class-wpban-security.php:455
+msgid "Balanced security with minimal performance impact"
+msgstr ""
+
+#: includes/functions.php:149
+msgid "OpenAI GPT Web Crawler"
+msgstr ""
+
+#: includes/functions.php:150
+msgid "ChatGPT Browser Tool"
+msgstr ""
+
+#: includes/functions.php:230
+msgid "Google Search (DO NOT BLOCK)"
+msgstr ""
+
+#: includes/functions.php:231
+msgid "Bing Search (DO NOT BLOCK)"
+msgstr ""
+
+#. Add all country names
+#: includes/functions.php:264
+msgid "Afghanistan"
+msgstr ""
+
+#: includes/functions.php:265
+msgid "Albania"
+msgstr ""
+
+#: includes/functions.php:327
+msgid "United States"
+msgstr ""
+
+#: includes/functions.php:416
+msgid "IP Ban"
+msgstr ""
+
+#: includes/functions.php:417
+msgid "Rate Limit"
+msgstr ""
+
+#: includes/functions.php:418
+msgid "Geo Block"
+msgstr ""
+
+#: includes/functions.php:419
+msgid "Crawler Block"
+msgstr ""
+
+#: includes/functions.php:420
+msgid "Failed Login"
+msgstr ""
+
+#: includes/functions.php:421
+msgid "Brute Force"
+msgstr ""
