@@ -1,638 +1,1629 @@
-# wpban Pro Language Template
-# Copyright (C) 2024 WPBan
-# This file is distributed under the GPLv2 or later.
+# Copyright (C) 2026 WenPai.org
+# This file is distributed under the same license as the WPBan plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: wpban Pro 5.0\n"
+"Project-Id-Version: WPBan 1.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpban\n"
+"POT-Creation-Date: 2026-08-12 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-01-01T00:00:00+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: wpban\n"
+"X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-msgid "wpban Pro"
+#: wpban.php
+msgid "WPBan"
 msgstr ""
 
 #. Plugin URI of the plugin
+#: wpban.php
 msgid "https://wpban.com/"
 msgstr ""
 
 #. Description of the plugin
-msgid "Advanced WordPress security with geo-blocking, rate limiting, and intelligent threat detection."
+#: wpban.php
+msgid ""
+"Advanced WordPress security with geo-blocking, rate limiting, and "
+"intelligent threat detection."
 msgstr ""
 
 #. Author of the plugin
-msgid "WPBan"
+#: wpban.php
+msgid "WenPai.org"
 msgstr ""
 
 #. Author URI of the plugin
+#: wpban.php
 msgid "https://wpban.com"
 msgstr ""
 
-#: includes/class-wpban-admin.php:30
+#: includes/class-wpban-admin.php:27 includes/class-wpban-admin.php:28
 msgid "WPBan Security"
 msgstr ""
 
-#: includes/class-wpban-admin.php:38
+#: includes/class-wpban-admin.php:38 includes/class-wpban-admin.php:39
 msgid "Settings"
 msgstr ""
 
-#: includes/class-wpban-admin.php:46
+#: includes/class-wpban-admin.php:47 includes/class-wpban-admin.php:602
 msgid "Security Logs"
 msgstr ""
 
-#: includes/class-wpban-admin.php:47
+#: includes/class-wpban-admin.php:48
 msgid "Logs"
 msgstr ""
 
-#: includes/class-wpban-admin.php:54
+#: includes/class-wpban-admin.php:56 includes/class-wpban-admin.php:57
 msgid "Tools"
 msgstr ""
 
-#: includes/class-wpban-admin.php:80
+#: includes/class-wpban-admin.php:75
 msgid "Are you sure you want to clear all logs?"
 msgstr ""
 
-#: includes/class-wpban-admin.php:81
+#: includes/class-wpban-admin.php:76
 msgid "This will replace your current settings. Continue?"
 msgstr ""
 
-#: includes/class-wpban-admin.php:82
+#: includes/class-wpban-admin.php:77
 msgid "Test email sent!"
 msgstr ""
 
-#: includes/class-wpban-admin.php:83
+#: includes/class-wpban-admin.php:78
 msgid "An error occurred"
 msgstr ""
 
-#: includes/class-wpban-admin.php:95
+#: includes/class-wpban-admin.php:91
 msgid "WPBan Security Dashboard"
 msgstr ""
 
-#: includes/class-wpban-admin.php:101
+#: includes/class-wpban-admin.php:97
 msgid "Total Blocks"
 msgstr ""
 
-#: includes/class-wpban-admin.php:115
+#: includes/class-wpban-admin.php:111
 msgid "Unique IPs"
 msgstr ""
 
-#: includes/class-wpban-admin.php:120
+#: includes/class-wpban-admin.php:116
 msgid "Today's Blocks"
 msgstr ""
 
-#: includes/class-wpban-admin.php:125
+#: includes/class-wpban-admin.php:121
 msgid "Active Rules"
 msgstr ""
 
-#: includes/class-wpban-admin.php:134
+#: includes/class-wpban-admin.php:129
 msgid "Quick Actions"
 msgstr ""
 
-#: includes/class-wpban-admin.php:136
+#: includes/class-wpban-admin.php:131
 msgid "Emergency Bypass URL:"
 msgstr ""
 
-#: includes/class-wpban-admin.php:142
+#: includes/class-wpban-admin.php:135
 msgid "Copy"
 msgstr ""
 
-#: includes/class-wpban-admin.php:145
+#: includes/class-wpban-admin.php:138
 msgid "Save this URL to access your site if you get locked out."
 msgstr ""
 
-#: includes/class-wpban-admin.php:150
+#: includes/class-wpban-admin.php:143
 msgid "Configure Settings"
 msgstr ""
 
-#: includes/class-wpban-admin.php:153
+#: includes/class-wpban-admin.php:146
 msgid "View Logs"
 msgstr ""
 
-#: includes/class-wpban-admin.php:160
+#: includes/class-wpban-admin.php:153
 msgid "Top Blocked Countries"
 msgstr ""
 
-#: includes/class-wpban-admin.php:187
+#: includes/class-wpban-admin.php:185
 msgid "Security Templates"
 msgstr ""
 
-#: includes/class-wpban-admin.php:188
+#: includes/class-wpban-admin.php:186
 msgid "Quickly apply pre-configured security settings."
 msgstr ""
 
-#: includes/class-wpban-admin.php:195
+#: includes/class-wpban-admin.php:193
 msgid "Apply"
 msgstr ""
 
-#: includes/class-wpban-admin.php:204
+#: includes/class-wpban-admin.php:202
 msgid "Recent Activity"
 msgstr ""
 
-#: includes/class-wpban-admin.php:209 includes/class-wpban-admin.php:468
+#: includes/class-wpban-admin.php:206 includes/class-wpban-admin.php:646
 msgid "Time"
 msgstr ""
 
-#: includes/class-wpban-admin.php:210 includes/class-wpban-admin.php:469
+#: includes/class-wpban-admin.php:207 includes/class-wpban-anything.php:201
 msgid "IP"
 msgstr ""
 
-#: includes/class-wpban-admin.php:211 includes/class-wpban-admin.php:470
+#: includes/class-wpban-admin.php:208 includes/class-wpban-admin.php:648
 msgid "Country"
 msgstr ""
 
-#: includes/class-wpban-admin.php:212 includes/class-wpban-admin.php:471
+#: includes/class-wpban-admin.php:209 includes/class-wpban-admin.php:649
 msgid "Action"
 msgstr ""
 
-#: includes/class-wpban-admin.php:213 includes/class-wpban-admin.php:472
+#: includes/class-wpban-admin.php:210 includes/class-wpban-admin.php:650
 msgid "Details"
 msgstr ""
 
-#: includes/class-wpban-admin.php:236
+#: includes/class-wpban-admin.php:237
 msgid "WPBan Security Settings"
 msgstr ""
 
-#: includes/class-wpban-admin.php:243
+#: includes/class-wpban-admin.php:244
 msgid "General"
 msgstr ""
 
-#: includes/class-wpban-admin.php:244
+#: includes/class-wpban-admin.php:245
 msgid "IP Rules"
 msgstr ""
 
-#: includes/class-wpban-admin.php:245
+#: includes/class-wpban-admin.php:246
 msgid "Advanced"
 msgstr ""
 
-#: includes/class-wpban-admin.php:246
+#: includes/class-wpban-admin.php:247
 msgid "Rate Limiting"
 msgstr ""
 
-#: includes/class-wpban-admin.php:247
+#: includes/class-wpban-admin.php:248
 msgid "Geo Blocking"
 msgstr ""
 
-#: includes/class-wpban-admin.php:248
+#: includes/class-wpban-admin.php:249
 msgid "Crawlers"
 msgstr ""
 
-#: includes/class-wpban-admin.php:249
+#: includes/class-wpban-admin.php:250
 msgid "Notifications"
 msgstr ""
 
-#: includes/class-wpban-admin.php:256
+#: includes/class-wpban-admin.php:257
 msgid "Enable Logging"
 msgstr ""
 
-#: includes/class-wpban-admin.php:261
+#: includes/class-wpban-admin.php:262
 msgid "Log all security events"
 msgstr ""
 
-#: includes/class-wpban-admin.php:266
+#: includes/class-wpban-admin.php:267
 msgid "Reverse Proxy"
 msgstr ""
 
-#: includes/class-wpban-admin.php:271
+#: includes/class-wpban-admin.php:272
 msgid "Server is behind a reverse proxy (Cloudflare, nginx, etc.)"
 msgstr ""
 
-#: includes/class-wpban-admin.php:276
+#: includes/class-wpban-admin.php:277 includes/class-wpban-anything.php:221
+#: includes/class-wpban-anything.php:379
 msgid "Ban Message"
 msgstr ""
 
-#: includes/class-wpban-admin.php:287
+#: includes/class-wpban-admin.php:290
 msgid "Variables: %IP%, %DATE%, %SITE%"
 msgstr ""
 
-#: includes/class-wpban-admin.php:295
+#: includes/class-wpban-admin.php:300
 msgid "Banned IPs"
 msgstr ""
 
-#: includes/class-wpban-admin.php:300
+#: includes/class-wpban-admin.php:305
 msgid "One per line. Use * for wildcards (e.g., 192.168.*.*)"
 msgstr ""
 
-#: includes/class-wpban-admin.php:304
+#: includes/class-wpban-admin.php:309
 msgid "IP Ranges"
 msgstr ""
 
-#: includes/class-wpban-admin.php:309
+#: includes/class-wpban-admin.php:314
 msgid "CIDR: 192.168.0.0/24 or Range: 192.168.0.1-192.168.0.255"
 msgstr ""
 
-#: includes/class-wpban-admin.php:313
+#: includes/class-wpban-admin.php:318
 msgid "Whitelist IPs"
 msgstr ""
 
-#: includes/class-wpban-admin.php:318
+#: includes/class-wpban-admin.php:323
 msgid "These IPs will never be blocked"
 msgstr ""
 
-#: includes/class-wpban-admin.php:322
+#: includes/class-wpban-admin.php:327
 msgid "Login Protection"
 msgstr ""
 
-#: includes/class-wpban-admin.php:327
+#: includes/class-wpban-admin.php:332
 msgid "Only these IPs can access wp-login.php (leave empty to allow all)"
 msgstr ""
 
-#: includes/class-wpban-admin.php:336
+#: includes/class-wpban-admin.php:342
 msgid "Banned Hosts"
 msgstr ""
 
-#: includes/class-wpban-admin.php:341
+#: includes/class-wpban-admin.php:347
 msgid "e.g., *.badhost.com"
 msgstr ""
 
-#: includes/class-wpban-admin.php:345
+#: includes/class-wpban-admin.php:351
 msgid "Banned Referers"
 msgstr ""
 
-#: includes/class-wpban-admin.php:352
+#: includes/class-wpban-admin.php:359
 msgid "Banned User Agents"
 msgstr ""
 
-#: includes/class-wpban-admin.php:359
+#: includes/class-wpban-admin.php:367
 msgid "Browser Restrictions"
 msgstr ""
 
-#: includes/class-wpban-admin.php:365
+#: includes/class-wpban-admin.php:373
 msgid "Block WeChat/QQ Browsers"
 msgstr ""
 
-#: includes/class-wpban-admin.php:375
+#: includes/class-wpban-admin.php:383
 msgid "Rate Limiting Settings"
 msgstr ""
 
-#: includes/class-wpban-admin.php:376
-msgid "Protect against floods and brute force attacks by limiting request rates."
+#: includes/class-wpban-admin.php:384
+msgid ""
+"Protect against floods and brute force attacks by limiting request rates."
 msgstr ""
 
-#: includes/class-wpban-admin.php:380
+#: includes/class-wpban-admin.php:388
 msgid "General Requests"
 msgstr ""
 
-#: includes/class-wpban-admin.php:385
+#: includes/class-wpban-admin.php:393 includes/class-wpban-admin.php:411
 msgid "requests per minute"
 msgstr ""
 
-#: includes/class-wpban-admin.php:389
+#: includes/class-wpban-admin.php:397
 msgid "Login Attempts"
 msgstr ""
 
-#: includes/class-wpban-admin.php:394
+#: includes/class-wpban-admin.php:402
 msgid "attempts per hour"
 msgstr ""
 
-#: includes/class-wpban-admin.php:398
+#: includes/class-wpban-admin.php:406
 msgid "API Requests"
 msgstr ""
 
-#: includes/class-wpban-admin.php:410
+#: includes/class-wpban-admin.php:419
 msgid "Geographic Blocking"
 msgstr ""
 
-#: includes/class-wpban-admin.php:414
+#: includes/class-wpban-admin.php:423
 msgid "Enable Geo Blocking"
 msgstr ""
 
-#: includes/class-wpban-admin.php:419
+#: includes/class-wpban-admin.php:428
 msgid "Block or allow access based on country"
 msgstr ""
 
-#: includes/class-wpban-admin.php:424
+#: includes/class-wpban-admin.php:433
 msgid "Block Mode"
 msgstr ""
 
-#: includes/class-wpban-admin.php:429
+#: includes/class-wpban-admin.php:438
 msgid "Block selected countries"
 msgstr ""
 
-#: includes/class-wpban-admin.php:434
+#: includes/class-wpban-admin.php:443
 msgid "Allow only selected countries"
 msgstr ""
 
-#: includes/class-wpban-admin.php:439
+#: includes/class-wpban-admin.php:448
 msgid "Countries"
 msgstr ""
 
-#: includes/class-wpban-admin.php:454
+#: includes/class-wpban-admin.php:462
 msgid "Hold Ctrl/Cmd to select multiple countries"
 msgstr ""
 
-#: includes/class-wpban-admin.php:463
+#: includes/class-wpban-admin.php:472
 msgid "Select All AI"
 msgstr ""
 
-#: includes/class-wpban-admin.php:466
+#: includes/class-wpban-admin.php:475
 msgid "Select All SEO"
 msgstr ""
 
-#: includes/class-wpban-admin.php:469
+#: includes/class-wpban-admin.php:478
 msgid "Deselect All"
 msgstr ""
 
-#: includes/class-wpban-admin.php:479
+#: includes/class-wpban-admin.php:487
 msgid "AI Crawlers"
 msgstr ""
 
-#: includes/class-wpban-admin.php:494
+#: includes/class-wpban-admin.php:500
 msgid "SEO Crawlers"
 msgstr ""
 
-#: includes/class-wpban-admin.php:496
+#: includes/class-wpban-admin.php:502
 msgid "⚠️ Blocking SEO crawlers may affect your search engine rankings!"
 msgstr ""
 
-#: includes/class-wpban-admin.php:516
+#: includes/class-wpban-admin.php:521
 msgid "Enable Email Notifications"
 msgstr ""
 
-#: includes/class-wpban-admin.php:521
+#: includes/class-wpban-admin.php:526
 msgid "Send email alerts for security events"
 msgstr ""
 
-#: includes/class-wpban-admin.php:526
+#: includes/class-wpban-admin.php:531
 msgid "Recipient Email"
 msgstr ""
 
-#: includes/class-wpban-admin.php:532
+#: includes/class-wpban-admin.php:537
 msgid "Send Test Email"
 msgstr ""
 
-#: includes/class-wpban-admin.php:537
+#: includes/class-wpban-admin.php:542
 msgid "Alert Threshold"
 msgstr ""
 
-#: includes/class-wpban-admin.php:542
+#: includes/class-wpban-admin.php:547
 msgid "Send alert after this many blocks from same IP"
 msgstr ""
 
-#: includes/class-wpban-admin.php:546
+#: includes/class-wpban-admin.php:551
 msgid "Alert Events"
 msgstr ""
 
-#: includes/class-wpban-admin.php:549
+#: includes/class-wpban-admin.php:555
 msgid "Rate limit exceeded"
 msgstr ""
 
-#: includes/class-wpban-admin.php:550
+#: includes/class-wpban-admin.php:556
 msgid "Geographic block"
 msgstr ""
 
-#: includes/class-wpban-admin.php:551
+#: includes/class-wpban-admin.php:557
 msgid "Brute force attempt"
 msgstr ""
 
-#: includes/class-wpban-admin.php:552
+#: includes/class-wpban-admin.php:558
 msgid "Crawler blocked"
 msgstr ""
 
-#: includes/class-wpban-admin.php:571
+#: includes/class-wpban-admin.php:578
 msgid "Save Settings"
 msgstr ""
 
-#: includes/class-wpban-admin.php:597
+#: includes/class-wpban-admin.php:610
 msgid "From date"
 msgstr ""
 
-#: includes/class-wpban-admin.php:600
+#: includes/class-wpban-admin.php:613
 msgid "To date"
 msgstr ""
 
-#: includes/class-wpban-admin.php:603
+#: includes/class-wpban-admin.php:616
 msgid "All Actions"
 msgstr ""
 
-#: includes/class-wpban-admin.php:604
+#: includes/class-wpban-admin.php:617 includes/functions.php:341
 msgid "Banned"
 msgstr ""
 
-#: includes/class-wpban-admin.php:605
+#: includes/class-wpban-admin.php:618 includes/functions.php:342
 msgid "Blocked"
 msgstr ""
 
-#: includes/class-wpban-admin.php:606
+#: includes/class-wpban-admin.php:619 includes/functions.php:339
 msgid "Failed Login"
-msgstr ""
-
-#: includes/class-wpban-admin.php:607
-msgid "Bypass Used"
-msgstr ""
-
-#: includes/class-wpban-admin.php:611
-msgid "IP Address"
-msgstr ""
-
-#: includes/class-wpban-admin.php:614
-msgid "Country Code"
-msgstr ""
-
-#: includes/class-wpban-admin.php:616
-msgid "Filter"
-msgstr ""
-
-#: includes/class-wpban-admin.php:617
-msgid "Reset"
 msgstr ""
 
 #: includes/class-wpban-admin.php:620
+msgid "Bypass Used"
+msgstr ""
+
+#: includes/class-wpban-admin.php:624 includes/class-wpban-admin.php:647
+msgid "IP Address"
+msgstr ""
+
+#: includes/class-wpban-admin.php:627
+msgid "Country Code"
+msgstr ""
+
+#: includes/class-wpban-admin.php:629 includes/class-wpban-admin.php:668
+msgid "Filter"
+msgstr ""
+
+#: includes/class-wpban-admin.php:630
+msgid "Reset"
+msgstr ""
+
+#: includes/class-wpban-admin.php:633
 msgid "Export CSV"
 msgstr ""
 
-#: includes/class-wpban-admin.php:624
+#: includes/class-wpban-admin.php:637
 msgid "Clear Logs"
 msgstr ""
 
-#: includes/class-wpban-admin.php:638
+#: includes/class-wpban-admin.php:651 includes/class-wpban-anything.php:203
 msgid "User Agent"
 msgstr ""
 
-#: includes/class-wpban-admin.php:639
+#: includes/class-wpban-admin.php:652
 msgid "URI"
 msgstr ""
 
-#: includes/class-wpban-admin.php:645
+#: includes/class-wpban-admin.php:658
 msgid "No logs found."
 msgstr ""
 
-#: includes/class-wpban-admin.php:688
+#: includes/class-wpban-admin.php:719
 msgid "WPBan Tools"
 msgstr ""
 
-#: includes/class-wpban-admin.php:694
+#: includes/class-wpban-admin.php:724
 msgid "Import/Export Settings"
 msgstr ""
 
-#: includes/class-wpban-admin.php:695
+#: includes/class-wpban-admin.php:725
 msgid "Backup your settings or migrate to another site."
 msgstr ""
 
-#: includes/class-wpban-admin.php:697
+#: includes/class-wpban-admin.php:727
 msgid "Export"
 msgstr ""
 
-#: includes/class-wpban-admin.php:700
+#: includes/class-wpban-admin.php:730
 msgid "Download Settings"
 msgstr ""
 
-#: includes/class-wpban-admin.php:704
+#: includes/class-wpban-admin.php:734
 msgid "Import"
 msgstr ""
 
-#: includes/class-wpban-admin.php:714
+#: includes/class-wpban-admin.php:743
 msgid "Import Settings"
 msgstr ""
 
-#: includes/class-wpban-admin.php:722
+#: includes/class-wpban-admin.php:751
 msgid "Database Maintenance"
 msgstr ""
 
-#: includes/class-wpban-admin.php:723
+#: includes/class-wpban-admin.php:752
 msgid "Optimize your WPBan database tables."
 msgstr ""
 
-#: includes/class-wpban-admin.php:736
+#: includes/class-wpban-admin.php:765
 msgid "Total Log Entries"
 msgstr ""
 
-#: includes/class-wpban-admin.php:740
+#: includes/class-wpban-admin.php:769
 msgid "Database Size"
 msgstr ""
 
-#: includes/class-wpban-admin.php:747
+#: includes/class-wpban-admin.php:776
 msgid "Optimize Tables"
 msgstr ""
 
-#: includes/class-wpban-admin.php:751
+#: includes/class-wpban-admin.php:779
 msgid "Clear Logs Older Than 30 Days"
 msgstr ""
 
-#: includes/class-wpban-admin.php:758
+#: includes/class-wpban-admin.php:786
 msgid "System Information"
 msgstr ""
 
-#: includes/class-wpban-admin.php:829
+#: includes/class-wpban-admin.php:849 includes/class-wpban-anything.php:502
 msgid "Settings saved successfully!"
 msgstr ""
 
-#: includes/class-wpban-admin.php:844
+#: includes/class-wpban-admin.php:863
 msgid "Invalid template"
 msgstr ""
 
-#: includes/class-wpban-admin.php:853
+#: includes/class-wpban-admin.php:872
 msgid "Template applied successfully!"
 msgstr ""
 
-#: includes/class-wpban-admin.php:928
+#: includes/class-wpban-admin.php:950
 msgid "Logs cleared successfully!"
 msgstr ""
 
-#: includes/class-wpban-admin.php:949
+#: includes/class-wpban-admin.php:969
 msgid "Test email sent successfully!"
 msgstr ""
 
-#: includes/class-wpban-admin.php:951
+#: includes/class-wpban-admin.php:971
 msgid "Failed to send test email. Please check your email settings."
 msgstr ""
 
-#: includes/class-wpban-security.php:109
+#: includes/class-wpban-ai-crawlers.php:20
+msgid ""
+"Explores sites for web content that is used to train open language models"
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:21
+msgid "Generates data sets used to train open language models"
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:22
+msgid "Used by Amazon's Alexa AI to provide AI answers."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:23
+msgid ""
+"Used by Apple for generative AI features across Apple products, including "
+"Apple Intelligence, Services, and Developer Tools."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:24
+#: includes/class-wpban-ai-crawlers.php:28
+#: includes/class-wpban-ai-crawlers.php:29
+msgid "Used by Anthropic's Claude."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:25
+msgid "Used by TikTok for AI training."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:26
+msgid "Compiles datasets used to train AI models."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:27
+#: includes/class-wpban-ai-crawlers.php:36
+msgid "Used by OpenAI to power ChatGPT."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:30
+#: includes/class-wpban-ai-crawlers.php:31
+msgid "Used by Cohere to scrape data for AI training."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:32
+msgid "A web scraper that can be used to extract data for AI training."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:33
+msgid "Used by Diffbot to scrape data for AI training."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:34
+msgid "Used by Meta (Facebook) for their AI."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:35
+msgid "Crawls websites to build datasets for machine learning experiments."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:37
+msgid "Used by Google to power Gemini (formerly known as Bard)."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:38
+msgid ""
+"Used by Hive's Imagesift tool that scrapes images. This may be used for the "
+"company's generative AI product."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:39
+msgid "Used to power the Australia-focused Kangaroo LLM."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:40
+#: includes/class-wpban-ai-crawlers.php:41
+msgid "Used by Meta (Facebook) to train AI products."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:42
+msgid "Used by OpenAI for their SearchGPT product."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:43
+#: includes/class-wpban-ai-crawlers.php:44
+msgid "Used by Omgili to scrape data for AI training."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:45
+msgid ""
+"Used by Huawei to download data for the Large Language Model (LLM) called "
+"PanGu."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:46
+msgid "Used by Huawei to scrape data for AI training."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:47
+msgid "Used by Perplexity for their AI products."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:48
+msgid "Blocks the Scrapy bot (used for scraping websites)."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:49
+msgid ""
+"Blocks the Semrush bot used to pull data into the Semrush platform. Data is "
+"used for their ContentShake AI tool."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:50
+#: includes/class-wpban-ai-crawlers.php:51
+msgid "Blocks the Semrush bot used to pull data into the Semrush platform."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:52
+#: includes/class-wpban-ai-crawlers.php:53
+msgid "Used for sentiment analysis and AI training."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:54
+msgid "Used by Timpi; likely for their Wilson AI Product."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:55
+msgid "Used by Turnitin to scrape data for plagiarism detection."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:56
+msgid "Used by You.com to train AI products."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:57
+msgid "Used by Webz.io for their social listening and intelligence platforms."
+msgstr ""
+
+#: includes/class-wpban-ai-crawlers.php:58
+msgid "Used by Webz.io for AI training."
+msgstr ""
+
+#: includes/class-wpban-anything.php:85 includes/class-wpban-security.php:540
+msgid "Link copied to clipboard!"
+msgstr ""
+
+#: includes/class-wpban-anything.php:97 includes/class-wpban-anything.php:98
+msgid "Ban Anything"
+msgstr ""
+
+#: includes/class-wpban-anything.php:121
+msgid "Please use your system browser to open this site."
+msgstr ""
+
+#: includes/class-wpban-anything.php:122 includes/class-wpban-templates.php:37
+msgid "Copy Link"
+msgstr ""
+
+#: includes/class-wpban-anything.php:189
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: includes/class-wpban-anything.php:195
+msgid "WPBan Anything Settings"
+msgstr ""
+
+#: includes/class-wpban-anything.php:198
+msgid "Your Details"
+msgstr ""
+
+#: includes/class-wpban-anything.php:199
+msgid "Your current connection details."
+msgstr ""
+
+#: includes/class-wpban-anything.php:202
+msgid "Host"
+msgstr ""
+
+#: includes/class-wpban-anything.php:208
+msgid "Ban Settings"
+msgstr ""
+
+#: includes/class-wpban-anything.php:215 includes/class-wpban-anything.php:232
+msgid "General Bans"
+msgstr ""
+
+#: includes/class-wpban-anything.php:216 includes/class-wpban-anything.php:243
+msgid "Advanced Bans"
+msgstr ""
+
+#: includes/class-wpban-anything.php:217 includes/class-wpban-anything.php:254
+#: includes/class-wpban-anything.php:411
+msgid "Login Restrictions"
+msgstr ""
+
+#: includes/class-wpban-anything.php:218 includes/class-wpban-anything.php:261
+msgid "Browser Bans"
+msgstr ""
+
+#: includes/class-wpban-anything.php:219 includes/class-wpban-anything.php:272
+msgid "AI Bans"
+msgstr ""
+
+#: includes/class-wpban-anything.php:220 includes/class-wpban-anything.php:324
+msgid "SEO Bans"
+msgstr ""
+
+#: includes/class-wpban-anything.php:222 includes/class-wpban-anything.php:386
+msgid "Options"
+msgstr ""
+
+#: includes/class-wpban-anything.php:234
+msgid "Banned IPs (Use * for wildcards, e.g., 192.168.1.*):"
+msgstr ""
+
+#: includes/class-wpban-anything.php:236
+msgid "Banned IP Ranges (e.g., 192.168.1.1-192.168.1.255):"
+msgstr ""
+
+#: includes/class-wpban-anything.php:238
+msgid "Excluded IPs (e.g., 192.168.1.100):"
+msgstr ""
+
+#: includes/class-wpban-anything.php:245
+msgid "Banned Hosts (Use * for wildcards, e.g., *.com):"
+msgstr ""
+
+#: includes/class-wpban-anything.php:247
+msgid "Banned Referers (e.g., http://*.example.com):"
+msgstr ""
+
+#: includes/class-wpban-anything.php:249
+msgid "Banned User Agents (e.g., Bot*):"
+msgstr ""
+
+#: includes/class-wpban-anything.php:256
+msgid "Allowed IPs for wp-login.php (e.g., 192.168.1.0/24):"
+msgstr ""
+
+#: includes/class-wpban-anything.php:263
+msgid "Enable WeChat/QQ Ban"
+msgstr ""
+
+#: includes/class-wpban-anything.php:264
+msgid "Message:"
+msgstr ""
+
+#: includes/class-wpban-anything.php:266
+msgid "Copy Button Text:"
+msgstr ""
+
+#: includes/class-wpban-anything.php:274 includes/class-wpban-anything.php:327
+msgid "Select All"
+msgstr ""
+
+#: includes/class-wpban-anything.php:275 includes/class-wpban-anything.php:328
+msgid "Select None"
+msgstr ""
+
+#: includes/class-wpban-anything.php:279
+msgid "Search AI crawlers:"
+msgstr ""
+
+#: includes/class-wpban-anything.php:280 includes/class-wpban-anything.php:336
+msgid "Search..."
+msgstr ""
+
+#: includes/class-wpban-anything.php:293 includes/class-wpban-anything.php:349
+msgid "Crawler"
+msgstr ""
+
+#: includes/class-wpban-anything.php:294 includes/class-wpban-anything.php:350
+msgid "Description"
+msgstr ""
+
+#: includes/class-wpban-anything.php:295 includes/class-wpban-anything.php:351
+msgid "Risk"
+msgstr ""
+
+#: includes/class-wpban-anything.php:296 includes/class-wpban-anything.php:352
+msgid "Recommended"
+msgstr ""
+
+#: includes/class-wpban-anything.php:297 includes/class-wpban-anything.php:353
+msgid "Block"
+msgstr ""
+
+#: includes/class-wpban-anything.php:298 includes/class-wpban-anything.php:313
+#: includes/class-wpban-anything.php:354 includes/class-wpban-anything.php:369
+msgid "More Info"
+msgstr ""
+
+#: includes/class-wpban-anything.php:309
+msgid "Blocking may affect AI training datasets."
+msgstr ""
+
+#: includes/class-wpban-anything.php:332
+msgid ""
+"Warning: Blocking major SEO crawlers (e.g., Googlebot, Bingbot) may reduce "
+"your site's visibility and traffic. Review recommendations before saving."
+msgstr ""
+
+#: includes/class-wpban-anything.php:335
+msgid "Search SEO crawlers:"
+msgstr ""
+
+#: includes/class-wpban-anything.php:365
+msgid "Blocking may affect SEO rankings."
+msgstr ""
+
+#: includes/class-wpban-anything.php:381
+msgid "Message shown to banned users:"
+msgstr ""
+
+#: includes/class-wpban-anything.php:388
+msgid "Use Reverse Proxy"
+msgstr ""
+
+#: includes/class-wpban-anything.php:392
+msgid "Save Changes"
+msgstr ""
+
+#: includes/class-wpban-anything.php:397
+msgid "Ban Statistics"
+msgstr ""
+
+#: includes/class-wpban-anything.php:398
+msgid "View detailed ban attempt statistics."
+msgstr ""
+
+#: includes/class-wpban-anything.php:402
+msgid "Metric"
+msgstr ""
+
+#: includes/class-wpban-anything.php:403
+msgid "Value"
+msgstr ""
+
+#: includes/class-wpban-anything.php:407
+msgid "Total Ban Attempts"
+msgstr ""
+
+#: includes/class-wpban-anything.php:408
+msgid "Unique IPs Banned"
+msgstr ""
+
+#: includes/class-wpban-anything.php:409
+msgid "Last Ban Time"
+msgstr ""
+
+#: includes/class-wpban-anything.php:409
+msgid "Never"
+msgstr ""
+
+#: includes/class-wpban-anything.php:410
+msgid "IP Bans"
+msgstr ""
+
+#: includes/class-wpban-anything.php:412
+msgid "WeChat/QQ Bans"
+msgstr ""
+
+#: includes/class-wpban-anything.php:413
+msgid "AI Crawler Bans"
+msgstr ""
+
+#: includes/class-wpban-anything.php:414
+msgid "SEO Crawler Bans"
+msgstr ""
+
+#: includes/class-wpban-anything.php:415
+msgid "Recent Banned IPs"
+msgstr ""
+
+#: includes/class-wpban-anything.php:419
+msgid "None"
+msgstr ""
+
+#: includes/class-wpban-anything.php:484
+msgid ""
+"You are about to block major SEO crawlers (e.g., Googlebot, Bingbot), which "
+"may reduce your site\\'s traffic. Are you sure?"
+msgstr ""
+
+#: includes/class-wpban-anything.php:489
+msgid "Saving..."
+msgstr ""
+
+#: includes/class-wpban-anything.php:506
+msgid "Failed to save settings."
+msgstr ""
+
+#: includes/class-wpban-anything.php:512
+msgid "Server error occurred: "
+msgstr ""
+
+#: includes/class-wpban-anything.php:544
+msgid "Invalid nonce."
+msgstr ""
+
+#: includes/class-wpban-anything.php:547
+msgid "Permission denied."
+msgstr ""
+
+#: includes/class-wpban-anything.php:552
+msgid "Settings saved."
+msgstr ""
+
+#: includes/class-wpban-security.php:100
 msgid "Too many requests. Please try again later."
 msgstr ""
 
-#: includes/class-wpban-security.php:144
-#: includes/class-wpban-security.php:152
+#: includes/class-wpban-security.php:133 includes/class-wpban-security.php:140
 msgid "Access denied from your location."
 msgstr ""
 
-#: includes/class-wpban-security.php:415
+#: includes/class-wpban-security.php:439
+#, php-format
+msgid "[%s] Security Alert: %s"
+msgstr ""
+
+#: includes/class-wpban-security.php:667 includes/class-wpban-templates.php:16
 msgid "Basic Protection"
 msgstr ""
 
-#: includes/class-wpban-security.php:416
+#: includes/class-wpban-security.php:668 includes/class-wpban-templates.php:17
 msgid "Essential security for most WordPress sites"
 msgstr ""
 
-#: includes/class-wpban-security.php:427
+#: includes/class-wpban-security.php:679 includes/class-wpban-templates.php:27
 msgid "Strict Security"
 msgstr ""
 
-#: includes/class-wpban-security.php:428
+#: includes/class-wpban-security.php:680
 msgid "Maximum protection with geo-blocking and rate limiting"
 msgstr ""
 
-#: includes/class-wpban-security.php:443
+#: includes/class-wpban-security.php:696 includes/class-wpban-templates.php:45
 msgid "Content Protection"
 msgstr ""
 
-#: includes/class-wpban-security.php:444
+#: includes/class-wpban-security.php:697
 msgid "Protect content from AI and scraping"
 msgstr ""
 
-#: includes/class-wpban-security.php:454
+#: includes/class-wpban-security.php:707
 msgid "Performance Mode"
 msgstr ""
 
-#: includes/class-wpban-security.php:455
+#: includes/class-wpban-security.php:708
 msgid "Balanced security with minimal performance impact"
 msgstr ""
 
-#: includes/functions.php:149
+#: includes/class-wpban-seo-crawlers.php:19
+msgid "Google's primary crawler for indexing web pages."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:20
+msgid "Microsoft Bing's crawler for indexing web content."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:21
+msgid ""
+"Baidu's crawler for indexing content, primarily for the Chinese market."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:22
+msgid "Yandex's crawler for indexing web pages, used in Russia and beyond."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:23
+msgid "DuckDuckGo's crawler for indexing privacy-focused search results."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:24
+msgid "Yahoo's legacy crawler for indexing web content."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:25
+msgid "Sogou's crawler for indexing content, popular in China."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:26
+msgid "Exalead's crawler for indexing web pages, used by Dassault Systèmes."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:27
+msgid "Ahrefs' crawler for SEO analysis and backlink indexing."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:28
+msgid "Majestic's crawler for SEO and backlink analysis."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:29
+msgid "MauiBot is a web crawler used for data collection."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:30
+msgid "MegaIndex.ru is a Russian SEO tool crawler."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:31
+msgid "Bytedance's crawler for data collection."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:32
+msgid "SemrushBot is a crawler used by Semrush for SEO analysis."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:33
+msgid "User agent for older Windows operating systems (e.g., Windows XP)."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:34
+msgid "BLEXBot is a web crawler used by WebMeUp for backlink analysis."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:35
+msgid "DotBot is a web crawler used by Moz for SEO data collection."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:36
+msgid "CocCocBot is a Vietnamese search engine crawler."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:37
+msgid "ImagesiftBot is a crawler used for image analysis."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:38
+msgid "A common user agent for Java-based HTTP clients."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:39
+msgid "User agent for Windows Vista, 7, 8, and 10."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:40
+msgid "User agent for macOS devices."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:41
+msgid "User agent for Python-based web requests."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:42
+msgid "User agent for Fedora Linux systems."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:43
+msgid "User agent for X11-based systems (e.g., Linux)."
+msgstr ""
+
+#: includes/class-wpban-seo-crawlers.php:44
+msgid "User agent for 64-bit Windows on Windows (WOW64) systems."
+msgstr ""
+
+#: includes/class-wpban-templates.php:28
+msgid "Maximum protection with login restrictions"
+msgstr ""
+
+#: includes/class-wpban-templates.php:35
+msgid "Browser Not Supported"
+msgstr ""
+
+#: includes/class-wpban-templates.php:36
+msgid "Please use Chrome, Firefox, or Safari to access this site."
+msgstr ""
+
+#: includes/class-wpban-templates.php:46
+msgid "Protect original content from AI crawlers"
+msgstr ""
+
+#: includes/class-wpban-templates.php:59
+msgid "Membership Site"
+msgstr ""
+
+#: includes/class-wpban-templates.php:60
+msgid "Ideal for private or membership websites"
+msgstr ""
+
+#: includes/class-wpban-templates.php:73
+msgid "Development Mode"
+msgstr ""
+
+#: includes/class-wpban-templates.php:74
+msgid "Minimal restrictions for development sites"
+msgstr ""
+
+#: includes/functions.php:101
 msgid "OpenAI GPT Web Crawler"
 msgstr ""
 
-#: includes/functions.php:150
+#: includes/functions.php:102
 msgid "ChatGPT Browser Tool"
 msgstr ""
 
-#: includes/functions.php:230
+#: includes/functions.php:103
+msgid "OpenAI Search Bot"
+msgstr ""
+
+#: includes/functions.php:106
+msgid "Anthropic Claude Bot"
+msgstr ""
+
+#: includes/functions.php:107
+msgid "Claude Web Browser"
+msgstr ""
+
+#: includes/functions.php:108
+msgid "Anthropic AI Crawler"
+msgstr ""
+
+#: includes/functions.php:111
+msgid "Google Bard/Gemini Bot"
+msgstr ""
+
+#: includes/functions.php:114
+msgid "Microsoft Bing AI"
+msgstr ""
+
+#: includes/functions.php:117
+msgid "Meta/Facebook Bot"
+msgstr ""
+
+#: includes/functions.php:118
+msgid "Meta External Agent"
+msgstr ""
+
+#: includes/functions.php:119
+msgid "Meta External Fetcher"
+msgstr ""
+
+#: includes/functions.php:122
+msgid "Common Crawl Dataset"
+msgstr ""
+
+#: includes/functions.php:123
+msgid "Perplexity AI Search"
+msgstr ""
+
+#: includes/functions.php:124
+msgid "You.com Search Bot"
+msgstr ""
+
+#: includes/functions.php:125
+msgid "ByteDance Spider"
+msgstr ""
+
+#: includes/functions.php:126
+msgid "Cohere AI Bot"
+msgstr ""
+
+#: includes/functions.php:127
+msgid "Diffbot Crawler"
+msgstr ""
+
+#: includes/functions.php:128
+msgid "Amazon Alexa Bot"
+msgstr ""
+
+#: includes/functions.php:129
+msgid "Apple AI Bot"
+msgstr ""
+
+#: includes/functions.php:130
+msgid "Allen Institute AI"
+msgstr ""
+
+#: includes/functions.php:131
+msgid "AI2 Dolma Dataset"
+msgstr ""
+
+#: includes/functions.php:132
+msgid "Webz.io Bot"
+msgstr ""
+
+#: includes/functions.php:133
+msgid "Webz.io Crawler"
+msgstr ""
+
+#: includes/functions.php:134
+msgid "Image Analysis Bot"
+msgstr ""
+
+#: includes/functions.php:135
+msgid "Huawei Petal Search"
+msgstr ""
+
+#: includes/functions.php:139
 msgid "Google Search (DO NOT BLOCK)"
 msgstr ""
 
-#: includes/functions.php:231
+#: includes/functions.php:140
 msgid "Bing Search (DO NOT BLOCK)"
 msgstr ""
 
-#. Add all country names
-#: includes/functions.php:264
+#: includes/functions.php:141
+msgid "Yahoo Search"
+msgstr ""
+
+#: includes/functions.php:142
+msgid "DuckDuckGo Search"
+msgstr ""
+
+#: includes/functions.php:143
+msgid "Baidu Search (China)"
+msgstr ""
+
+#: includes/functions.php:144
+msgid "Yandex Search (Russia)"
+msgstr ""
+
+#: includes/functions.php:147
+msgid "Ahrefs SEO Tool"
+msgstr ""
+
+#: includes/functions.php:148
+msgid "Semrush SEO Tool"
+msgstr ""
+
+#: includes/functions.php:149
+msgid "Majestic SEO Tool"
+msgstr ""
+
+#: includes/functions.php:150
+msgid "Moz SEO Tool"
+msgstr ""
+
+#: includes/functions.php:151
+msgid "SEO Spider Tool"
+msgstr ""
+
+#: includes/functions.php:154
+msgid "Internet Archive"
+msgstr ""
+
+#: includes/functions.php:155
+msgid "Facebook Link Preview"
+msgstr ""
+
+#: includes/functions.php:156
+msgid "LinkedIn Preview"
+msgstr ""
+
+#: includes/functions.php:157
+msgid "WhatsApp Link Preview"
+msgstr ""
+
+#: includes/functions.php:158
+msgid "Twitter Link Preview"
+msgstr ""
+
+#: includes/functions.php:168
 msgid "Afghanistan"
 msgstr ""
 
-#: includes/functions.php:265
+#: includes/functions.php:169
 msgid "Albania"
 msgstr ""
 
-#: includes/functions.php:327
+#: includes/functions.php:170
+msgid "Algeria"
+msgstr ""
+
+#: includes/functions.php:171
+msgid "Argentina"
+msgstr ""
+
+#: includes/functions.php:172
+msgid "Armenia"
+msgstr ""
+
+#: includes/functions.php:173
+msgid "Australia"
+msgstr ""
+
+#: includes/functions.php:174
+msgid "Austria"
+msgstr ""
+
+#: includes/functions.php:175
+msgid "Azerbaijan"
+msgstr ""
+
+#: includes/functions.php:176
+msgid "Bangladesh"
+msgstr ""
+
+#: includes/functions.php:177
+msgid "Belarus"
+msgstr ""
+
+#: includes/functions.php:178
+msgid "Belgium"
+msgstr ""
+
+#: includes/functions.php:179
+msgid "Brazil"
+msgstr ""
+
+#: includes/functions.php:180
+msgid "Bulgaria"
+msgstr ""
+
+#: includes/functions.php:181
+msgid "Canada"
+msgstr ""
+
+#: includes/functions.php:182
+msgid "Chile"
+msgstr ""
+
+#: includes/functions.php:183
+msgid "China"
+msgstr ""
+
+#: includes/functions.php:184
+msgid "Colombia"
+msgstr ""
+
+#: includes/functions.php:185
+msgid "Croatia"
+msgstr ""
+
+#: includes/functions.php:186
+msgid "Czech Republic"
+msgstr ""
+
+#: includes/functions.php:187
+msgid "Denmark"
+msgstr ""
+
+#: includes/functions.php:188
+msgid "Egypt"
+msgstr ""
+
+#: includes/functions.php:189
+msgid "Estonia"
+msgstr ""
+
+#: includes/functions.php:190
+msgid "Finland"
+msgstr ""
+
+#: includes/functions.php:191
+msgid "France"
+msgstr ""
+
+#: includes/functions.php:192
+msgid "Georgia"
+msgstr ""
+
+#: includes/functions.php:193
+msgid "Germany"
+msgstr ""
+
+#: includes/functions.php:194
+msgid "Greece"
+msgstr ""
+
+#: includes/functions.php:195
+msgid "Hong Kong"
+msgstr ""
+
+#: includes/functions.php:196
+msgid "Hungary"
+msgstr ""
+
+#: includes/functions.php:197
+msgid "Iceland"
+msgstr ""
+
+#: includes/functions.php:198
+msgid "India"
+msgstr ""
+
+#: includes/functions.php:199
+msgid "Indonesia"
+msgstr ""
+
+#: includes/functions.php:200
+msgid "Iran"
+msgstr ""
+
+#: includes/functions.php:201
+msgid "Iraq"
+msgstr ""
+
+#: includes/functions.php:202
+msgid "Ireland"
+msgstr ""
+
+#: includes/functions.php:203
+msgid "Israel"
+msgstr ""
+
+#: includes/functions.php:204
+msgid "Italy"
+msgstr ""
+
+#: includes/functions.php:205
+msgid "Japan"
+msgstr ""
+
+#: includes/functions.php:206
+msgid "Kazakhstan"
+msgstr ""
+
+#: includes/functions.php:207
+msgid "Kenya"
+msgstr ""
+
+#: includes/functions.php:208
+msgid "South Korea"
+msgstr ""
+
+#: includes/functions.php:209
+msgid "Latvia"
+msgstr ""
+
+#: includes/functions.php:210
+msgid "Lithuania"
+msgstr ""
+
+#: includes/functions.php:211
+msgid "Malaysia"
+msgstr ""
+
+#: includes/functions.php:212
+msgid "Mexico"
+msgstr ""
+
+#: includes/functions.php:213
+msgid "Morocco"
+msgstr ""
+
+#: includes/functions.php:214
+msgid "Netherlands"
+msgstr ""
+
+#: includes/functions.php:215
+msgid "New Zealand"
+msgstr ""
+
+#: includes/functions.php:216
+msgid "Nigeria"
+msgstr ""
+
+#: includes/functions.php:217
+msgid "Norway"
+msgstr ""
+
+#: includes/functions.php:218
+msgid "Pakistan"
+msgstr ""
+
+#: includes/functions.php:219
+msgid "Peru"
+msgstr ""
+
+#: includes/functions.php:220
+msgid "Philippines"
+msgstr ""
+
+#: includes/functions.php:221
+msgid "Poland"
+msgstr ""
+
+#: includes/functions.php:222
+msgid "Portugal"
+msgstr ""
+
+#: includes/functions.php:223
+msgid "Romania"
+msgstr ""
+
+#: includes/functions.php:224
+msgid "Russia"
+msgstr ""
+
+#: includes/functions.php:225
+msgid "Saudi Arabia"
+msgstr ""
+
+#: includes/functions.php:226
+msgid "Serbia"
+msgstr ""
+
+#: includes/functions.php:227
+msgid "Singapore"
+msgstr ""
+
+#: includes/functions.php:228
+msgid "Slovakia"
+msgstr ""
+
+#: includes/functions.php:229
+msgid "Slovenia"
+msgstr ""
+
+#: includes/functions.php:230
+msgid "South Africa"
+msgstr ""
+
+#: includes/functions.php:231
+msgid "Spain"
+msgstr ""
+
+#: includes/functions.php:232
+msgid "Sweden"
+msgstr ""
+
+#: includes/functions.php:233
+msgid "Switzerland"
+msgstr ""
+
+#: includes/functions.php:234
+msgid "Taiwan"
+msgstr ""
+
+#: includes/functions.php:235
+msgid "Thailand"
+msgstr ""
+
+#: includes/functions.php:236
+msgid "Turkey"
+msgstr ""
+
+#: includes/functions.php:237
+msgid "Ukraine"
+msgstr ""
+
+#: includes/functions.php:238
+msgid "United Arab Emirates"
+msgstr ""
+
+#: includes/functions.php:239
+msgid "United Kingdom"
+msgstr ""
+
+#: includes/functions.php:240
 msgid "United States"
 msgstr ""
 
-#: includes/functions.php:416
+#: includes/functions.php:241
+msgid "Uzbekistan"
+msgstr ""
+
+#: includes/functions.php:242
+msgid "Venezuela"
+msgstr ""
+
+#: includes/functions.php:243
+msgid "Vietnam"
+msgstr ""
+
+#: includes/functions.php:335
 msgid "IP Ban"
 msgstr ""
 
-#: includes/functions.php:417
+#: includes/functions.php:336
 msgid "Rate Limit"
 msgstr ""
 
-#: includes/functions.php:418
+#: includes/functions.php:337
 msgid "Geo Block"
 msgstr ""
 
-#: includes/functions.php:419
+#: includes/functions.php:338
 msgid "Crawler Block"
 msgstr ""
 
-#: includes/functions.php:420
-msgid "Failed Login"
-msgstr ""
-
-#: includes/functions.php:421
+#: includes/functions.php:340
 msgid "Brute Force"
 msgstr ""

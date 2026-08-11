@@ -1,0 +1,1628 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wpban\n"
+"POT-Creation-Date: 2026-08-12 00:00+0000\n"
+"PO-Revision-Date: 2026-08-12 00:00+0000\n"
+"Last-Translator: WenPai Localization Team\n"
+"Language-Team: Chinese (China)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: WenPai deterministic i18n pipeline\n"
+
+#. Plugin Name of the plugin
+#: wpban.php
+msgid "WPBan"
+msgstr "WP禁令"
+
+#. Plugin URI of the plugin
+#: wpban.php
+msgid "https://wpban.com/"
+msgstr "https://wpban.com/"
+
+#. Description of the plugin
+#: wpban.php
+msgid ""
+"Advanced WordPress security with geo-blocking, rate limiting, and "
+"intelligent threat detection."
+msgstr "具有地理封锁、速率限制和智能威胁检测功能的高级 WordPress 安全性。"
+
+#. Author of the plugin
+#: wpban.php
+msgid "WenPai.org"
+msgstr "文派网"
+
+#. Author URI of the plugin
+#: wpban.php
+msgid "https://wpban.com"
+msgstr "https://wpban.com"
+
+#: includes/class-wpban-admin.php:27 includes/class-wpban-admin.php:28
+msgid "WPBan Security"
+msgstr "WPBan 安全"
+
+#: includes/class-wpban-admin.php:38 includes/class-wpban-admin.php:39
+msgid "Settings"
+msgstr "设置"
+
+#: includes/class-wpban-admin.php:47 includes/class-wpban-admin.php:602
+msgid "Security Logs"
+msgstr "安全日志"
+
+#: includes/class-wpban-admin.php:48
+msgid "Logs"
+msgstr "日志"
+
+#: includes/class-wpban-admin.php:56 includes/class-wpban-admin.php:57
+msgid "Tools"
+msgstr "工具"
+
+#: includes/class-wpban-admin.php:75
+msgid "Are you sure you want to clear all logs?"
+msgstr "您确定要清除所有日志吗？"
+
+#: includes/class-wpban-admin.php:76
+msgid "This will replace your current settings. Continue?"
+msgstr "这将替换您当前的设置。继续？"
+
+#: includes/class-wpban-admin.php:77
+msgid "Test email sent!"
+msgstr "测试邮件已发送！"
+
+#: includes/class-wpban-admin.php:78
+msgid "An error occurred"
+msgstr "发生错误"
+
+#: includes/class-wpban-admin.php:91
+msgid "WPBan Security Dashboard"
+msgstr "WPBan 安全仪表板"
+
+#: includes/class-wpban-admin.php:97
+msgid "Total Blocks"
+msgstr "总块数"
+
+#: includes/class-wpban-admin.php:111
+msgid "Unique IPs"
+msgstr "独特的IP"
+
+#: includes/class-wpban-admin.php:116
+msgid "Today's Blocks"
+msgstr "今天的区块"
+
+#: includes/class-wpban-admin.php:121
+msgid "Active Rules"
+msgstr "活动规则"
+
+#: includes/class-wpban-admin.php:129
+msgid "Quick Actions"
+msgstr "快速行动"
+
+#: includes/class-wpban-admin.php:131
+msgid "Emergency Bypass URL:"
+msgstr "紧急绕过网址："
+
+#: includes/class-wpban-admin.php:135
+msgid "Copy"
+msgstr "复制"
+
+#: includes/class-wpban-admin.php:138
+msgid "Save this URL to access your site if you get locked out."
+msgstr "保存此 URL，以便在您被锁定时访问您的网站。"
+
+#: includes/class-wpban-admin.php:143
+msgid "Configure Settings"
+msgstr "配置设置"
+
+#: includes/class-wpban-admin.php:146
+msgid "View Logs"
+msgstr "查看日志"
+
+#: includes/class-wpban-admin.php:153
+msgid "Top Blocked Countries"
+msgstr "最受封锁的国家/地区"
+
+#: includes/class-wpban-admin.php:185
+msgid "Security Templates"
+msgstr "安全模板"
+
+#: includes/class-wpban-admin.php:186
+msgid "Quickly apply pre-configured security settings."
+msgstr "快速应用预先配置的安全设置。"
+
+#: includes/class-wpban-admin.php:193
+msgid "Apply"
+msgstr "申请"
+
+#: includes/class-wpban-admin.php:202
+msgid "Recent Activity"
+msgstr "最近的活动"
+
+#: includes/class-wpban-admin.php:206 includes/class-wpban-admin.php:646
+msgid "Time"
+msgstr "时间"
+
+#: includes/class-wpban-admin.php:207 includes/class-wpban-anything.php:201
+msgid "IP"
+msgstr "知识产权"
+
+#: includes/class-wpban-admin.php:208 includes/class-wpban-admin.php:648
+msgid "Country"
+msgstr "国家"
+
+#: includes/class-wpban-admin.php:209 includes/class-wpban-admin.php:649
+msgid "Action"
+msgstr "行动"
+
+#: includes/class-wpban-admin.php:210 includes/class-wpban-admin.php:650
+msgid "Details"
+msgstr "细节"
+
+#: includes/class-wpban-admin.php:237
+msgid "WPBan Security Settings"
+msgstr "WPBan 安全设置"
+
+#: includes/class-wpban-admin.php:244
+msgid "General"
+msgstr "一般的"
+
+#: includes/class-wpban-admin.php:245
+msgid "IP Rules"
+msgstr "知识产权规则"
+
+#: includes/class-wpban-admin.php:246
+msgid "Advanced"
+msgstr "先进的"
+
+#: includes/class-wpban-admin.php:247
+msgid "Rate Limiting"
+msgstr "速率限制"
+
+#: includes/class-wpban-admin.php:248
+msgid "Geo Blocking"
+msgstr "地理封锁"
+
+#: includes/class-wpban-admin.php:249
+msgid "Crawlers"
+msgstr "爬行者"
+
+#: includes/class-wpban-admin.php:250
+msgid "Notifications"
+msgstr "通知"
+
+#: includes/class-wpban-admin.php:257
+msgid "Enable Logging"
+msgstr "启用日志记录"
+
+#: includes/class-wpban-admin.php:262
+msgid "Log all security events"
+msgstr "记录所有安全事件"
+
+#: includes/class-wpban-admin.php:267
+msgid "Reverse Proxy"
+msgstr "反向代理"
+
+#: includes/class-wpban-admin.php:272
+msgid "Server is behind a reverse proxy (Cloudflare, nginx, etc.)"
+msgstr "服务器位于反向代理后面（Cloudflare、nginx 等）"
+
+#: includes/class-wpban-admin.php:277 includes/class-wpban-anything.php:221
+#: includes/class-wpban-anything.php:379
+msgid "Ban Message"
+msgstr "禁止留言"
+
+#: includes/class-wpban-admin.php:290
+msgid "Variables: %IP%, %DATE%, %SITE%"
+msgstr "变量：%IP%、%DATE%、%SITE%"
+
+#: includes/class-wpban-admin.php:300
+msgid "Banned IPs"
+msgstr "被禁止的IP"
+
+#: includes/class-wpban-admin.php:305
+msgid "One per line. Use * for wildcards (e.g., 192.168.*.*)"
+msgstr "每行一个。使用 * 表示通配符（例如 192.168.*.*）"
+
+#: includes/class-wpban-admin.php:309
+msgid "IP Ranges"
+msgstr "IP范围"
+
+#: includes/class-wpban-admin.php:314
+msgid "CIDR: 192.168.0.0/24 or Range: 192.168.0.1-192.168.0.255"
+msgstr "CIDR：192.168.0.0/24 或范围：192.168.0.1-192.168.0.255"
+
+#: includes/class-wpban-admin.php:318
+msgid "Whitelist IPs"
+msgstr "白名单IP"
+
+#: includes/class-wpban-admin.php:323
+msgid "These IPs will never be blocked"
+msgstr "这些IP永远不会被封锁"
+
+#: includes/class-wpban-admin.php:327
+msgid "Login Protection"
+msgstr "登录保护"
+
+#: includes/class-wpban-admin.php:332
+msgid "Only these IPs can access wp-login.php (leave empty to allow all)"
+msgstr "只有这些IP可以访问wp-login.php（留空以允许所有）"
+
+#: includes/class-wpban-admin.php:342
+msgid "Banned Hosts"
+msgstr "禁止的主机"
+
+#: includes/class-wpban-admin.php:347
+msgid "e.g., *.badhost.com"
+msgstr "例如，*.badhost.com"
+
+#: includes/class-wpban-admin.php:351
+msgid "Banned Referers"
+msgstr "禁止推荐人"
+
+#: includes/class-wpban-admin.php:359
+msgid "Banned User Agents"
+msgstr "禁止的用户代理"
+
+#: includes/class-wpban-admin.php:367
+msgid "Browser Restrictions"
+msgstr "浏览器限制"
+
+#: includes/class-wpban-admin.php:373
+msgid "Block WeChat/QQ Browsers"
+msgstr "屏蔽微信/QQ浏览器"
+
+#: includes/class-wpban-admin.php:383
+msgid "Rate Limiting Settings"
+msgstr "速率限制设置"
+
+#: includes/class-wpban-admin.php:384
+msgid ""
+"Protect against floods and brute force attacks by limiting request rates."
+msgstr "通过限制请求率来防止洪水和暴力攻击。"
+
+#: includes/class-wpban-admin.php:388
+msgid "General Requests"
+msgstr "一般要求"
+
+#: includes/class-wpban-admin.php:393 includes/class-wpban-admin.php:411
+msgid "requests per minute"
+msgstr "每分钟请求数"
+
+#: includes/class-wpban-admin.php:397
+msgid "Login Attempts"
+msgstr "登录尝试"
+
+#: includes/class-wpban-admin.php:402
+msgid "attempts per hour"
+msgstr "每小时尝试次数"
+
+#: includes/class-wpban-admin.php:406
+msgid "API Requests"
+msgstr "API请求"
+
+#: includes/class-wpban-admin.php:419
+msgid "Geographic Blocking"
+msgstr "地理封锁"
+
+#: includes/class-wpban-admin.php:423
+msgid "Enable Geo Blocking"
+msgstr "启用地理封锁"
+
+#: includes/class-wpban-admin.php:428
+msgid "Block or allow access based on country"
+msgstr "根据国家/地区阻止或允许访问"
+
+#: includes/class-wpban-admin.php:433
+msgid "Block Mode"
+msgstr "块模式"
+
+#: includes/class-wpban-admin.php:438
+msgid "Block selected countries"
+msgstr "阻止选定的国家/地区"
+
+#: includes/class-wpban-admin.php:443
+msgid "Allow only selected countries"
+msgstr "仅允许选定的国家/地区"
+
+#: includes/class-wpban-admin.php:448
+msgid "Countries"
+msgstr "国家"
+
+#: includes/class-wpban-admin.php:462
+msgid "Hold Ctrl/Cmd to select multiple countries"
+msgstr "按住 Ctrl/Cmd 选择多个国家/地区"
+
+#: includes/class-wpban-admin.php:472
+msgid "Select All AI"
+msgstr "选择所有人工智能"
+
+#: includes/class-wpban-admin.php:475
+msgid "Select All SEO"
+msgstr "选择全部搜索引擎优化"
+
+#: includes/class-wpban-admin.php:478
+msgid "Deselect All"
+msgstr "取消全选"
+
+#: includes/class-wpban-admin.php:487
+msgid "AI Crawlers"
+msgstr "人工智能爬虫"
+
+#: includes/class-wpban-admin.php:500
+msgid "SEO Crawlers"
+msgstr "搜索引擎优化爬虫"
+
+#: includes/class-wpban-admin.php:502
+msgid "⚠️ Blocking SEO crawlers may affect your search engine rankings!"
+msgstr "⚠️屏蔽SEO爬虫可能会影响你的搜索引擎排名！"
+
+#: includes/class-wpban-admin.php:521
+msgid "Enable Email Notifications"
+msgstr "启用电子邮件通知"
+
+#: includes/class-wpban-admin.php:526
+msgid "Send email alerts for security events"
+msgstr "发送安全事件电子邮件警报"
+
+#: includes/class-wpban-admin.php:531
+msgid "Recipient Email"
+msgstr "收件人电子邮件"
+
+#: includes/class-wpban-admin.php:537
+msgid "Send Test Email"
+msgstr "发送测试电子邮件"
+
+#: includes/class-wpban-admin.php:542
+msgid "Alert Threshold"
+msgstr "警报阈值"
+
+#: includes/class-wpban-admin.php:547
+msgid "Send alert after this many blocks from same IP"
+msgstr "在来自同一 IP 的这么多块之后发送警报"
+
+#: includes/class-wpban-admin.php:551
+msgid "Alert Events"
+msgstr "警报事件"
+
+#: includes/class-wpban-admin.php:555
+msgid "Rate limit exceeded"
+msgstr "超出速率限制"
+
+#: includes/class-wpban-admin.php:556
+msgid "Geographic block"
+msgstr "地理区块"
+
+#: includes/class-wpban-admin.php:557
+msgid "Brute force attempt"
+msgstr "暴力尝试"
+
+#: includes/class-wpban-admin.php:558
+msgid "Crawler blocked"
+msgstr "爬虫受阻"
+
+#: includes/class-wpban-admin.php:578
+msgid "Save Settings"
+msgstr "保存设置"
+
+#: includes/class-wpban-admin.php:610
+msgid "From date"
+msgstr "开始日期"
+
+#: includes/class-wpban-admin.php:613
+msgid "To date"
+msgstr "迄今为止"
+
+#: includes/class-wpban-admin.php:616
+msgid "All Actions"
+msgstr "所有动作"
+
+#: includes/class-wpban-admin.php:617 includes/functions.php:341
+msgid "Banned"
+msgstr "禁止"
+
+#: includes/class-wpban-admin.php:618 includes/functions.php:342
+msgid "Blocked"
+msgstr "被阻止"
+
+#: includes/class-wpban-admin.php:619 includes/functions.php:339
+msgid "Failed Login"
+msgstr "登录失败"
+
+#: includes/class-wpban-admin.php:620
+msgid "Bypass Used"
+msgstr "使用旁路"
+
+#: includes/class-wpban-admin.php:624 includes/class-wpban-admin.php:647
+msgid "IP Address"
+msgstr "IP地址"
+
+#: includes/class-wpban-admin.php:627
+msgid "Country Code"
+msgstr "国家/地区代码"
+
+#: includes/class-wpban-admin.php:629 includes/class-wpban-admin.php:668
+msgid "Filter"
+msgstr "筛选"
+
+#: includes/class-wpban-admin.php:630
+msgid "Reset"
+msgstr "重置"
+
+#: includes/class-wpban-admin.php:633
+msgid "Export CSV"
+msgstr "导出 CSV"
+
+#: includes/class-wpban-admin.php:637
+msgid "Clear Logs"
+msgstr "清除日志"
+
+#: includes/class-wpban-admin.php:651 includes/class-wpban-anything.php:203
+msgid "User Agent"
+msgstr "用户代理"
+
+#: includes/class-wpban-admin.php:652
+msgid "URI"
+msgstr "统一资源标识符"
+
+#: includes/class-wpban-admin.php:658
+msgid "No logs found."
+msgstr "没有找到日志。"
+
+#: includes/class-wpban-admin.php:719
+msgid "WPBan Tools"
+msgstr "WPBan 工具"
+
+#: includes/class-wpban-admin.php:724
+msgid "Import/Export Settings"
+msgstr "导入/导出设置"
+
+#: includes/class-wpban-admin.php:725
+msgid "Backup your settings or migrate to another site."
+msgstr "备份您的设置或迁移到另一个站点。"
+
+#: includes/class-wpban-admin.php:727
+msgid "Export"
+msgstr "出口"
+
+#: includes/class-wpban-admin.php:730
+msgid "Download Settings"
+msgstr "下载设置"
+
+#: includes/class-wpban-admin.php:734
+msgid "Import"
+msgstr "进口"
+
+#: includes/class-wpban-admin.php:743
+msgid "Import Settings"
+msgstr "导入设置"
+
+#: includes/class-wpban-admin.php:751
+msgid "Database Maintenance"
+msgstr "数据库维护"
+
+#: includes/class-wpban-admin.php:752
+msgid "Optimize your WPBan database tables."
+msgstr "优化您的 WPBan 数据库表。"
+
+#: includes/class-wpban-admin.php:765
+msgid "Total Log Entries"
+msgstr "日志条目总数"
+
+#: includes/class-wpban-admin.php:769
+msgid "Database Size"
+msgstr "数据库大小"
+
+#: includes/class-wpban-admin.php:776
+msgid "Optimize Tables"
+msgstr "优化表"
+
+#: includes/class-wpban-admin.php:779
+msgid "Clear Logs Older Than 30 Days"
+msgstr "清除超过 30 天的日志"
+
+#: includes/class-wpban-admin.php:786
+msgid "System Information"
+msgstr "系统信息"
+
+#: includes/class-wpban-admin.php:849 includes/class-wpban-anything.php:502
+msgid "Settings saved successfully!"
+msgstr "设置保存成功！"
+
+#: includes/class-wpban-admin.php:863
+msgid "Invalid template"
+msgstr "模板无效"
+
+#: includes/class-wpban-admin.php:872
+msgid "Template applied successfully!"
+msgstr "模板应用成功！"
+
+#: includes/class-wpban-admin.php:950
+msgid "Logs cleared successfully!"
+msgstr "日志清除成功！"
+
+#: includes/class-wpban-admin.php:969
+msgid "Test email sent successfully!"
+msgstr "测试邮件发送成功！"
+
+#: includes/class-wpban-admin.php:971
+msgid "Failed to send test email. Please check your email settings."
+msgstr "无法发送测试电子邮件。请检查您的电子邮件设置。"
+
+#: includes/class-wpban-ai-crawlers.php:20
+msgid ""
+"Explores sites for web content that is used to train open language models"
+msgstr "探索用于训练开放语言模型的 Web 内容网站"
+
+#: includes/class-wpban-ai-crawlers.php:21
+msgid "Generates data sets used to train open language models"
+msgstr "生成用于训练开放语言模型的数据集"
+
+#: includes/class-wpban-ai-crawlers.php:22
+msgid "Used by Amazon's Alexa AI to provide AI answers."
+msgstr "被 Amazon 的 Alexa AI 用于提供 AI 答案。"
+
+#: includes/class-wpban-ai-crawlers.php:23
+msgid ""
+"Used by Apple for generative AI features across Apple products, including "
+"Apple Intelligence, Services, and Developer Tools."
+msgstr "Apple 将其用于 Apple 产品的生成式 AI 功能，包括 Apple Intelligence、服务和开发者工具。"
+
+#: includes/class-wpban-ai-crawlers.php:24
+#: includes/class-wpban-ai-crawlers.php:28
+#: includes/class-wpban-ai-crawlers.php:29
+msgid "Used by Anthropic's Claude."
+msgstr "由 Anthropic 的克劳德使用。"
+
+#: includes/class-wpban-ai-crawlers.php:25
+msgid "Used by TikTok for AI training."
+msgstr "被 TikTok 用于 AI 训练。"
+
+#: includes/class-wpban-ai-crawlers.php:26
+msgid "Compiles datasets used to train AI models."
+msgstr "编译用于训练人工智能模型的数据集。"
+
+#: includes/class-wpban-ai-crawlers.php:27
+#: includes/class-wpban-ai-crawlers.php:36
+msgid "Used by OpenAI to power ChatGPT."
+msgstr "由 OpenAI 用于为 ChatGPT 提供支持。"
+
+#: includes/class-wpban-ai-crawlers.php:30
+#: includes/class-wpban-ai-crawlers.php:31
+msgid "Used by Cohere to scrape data for AI training."
+msgstr "Cohere 使用它来抓取数据以进行 AI 训练。"
+
+#: includes/class-wpban-ai-crawlers.php:32
+msgid "A web scraper that can be used to extract data for AI training."
+msgstr "可用于提取人工智能训练数据的网络爬虫。"
+
+#: includes/class-wpban-ai-crawlers.php:33
+msgid "Used by Diffbot to scrape data for AI training."
+msgstr "Diffbot 使用它来抓取数据以进行 AI 训练。"
+
+#: includes/class-wpban-ai-crawlers.php:34
+msgid "Used by Meta (Facebook) for their AI."
+msgstr "被 Meta (Facebook) 用于他们的人工智能。"
+
+#: includes/class-wpban-ai-crawlers.php:35
+msgid "Crawls websites to build datasets for machine learning experiments."
+msgstr "抓取网站以构建机器学习实验的数据集。"
+
+#: includes/class-wpban-ai-crawlers.php:37
+msgid "Used by Google to power Gemini (formerly known as Bard)."
+msgstr "被 Google 用于为 Gemini（以前称为 Bard）提供支持。"
+
+#: includes/class-wpban-ai-crawlers.php:38
+msgid ""
+"Used by Hive's Imagesift tool that scrapes images. This may be used for the "
+"company's generative AI product."
+msgstr "由 Hive 的 Imagesift 工具用于抓取图像。这可能会用于该公司的生成式人工智能产品。"
+
+#: includes/class-wpban-ai-crawlers.php:39
+msgid "Used to power the Australia-focused Kangaroo LLM."
+msgstr "用于为专注于澳大利亚的袋鼠法学硕士提供支持。"
+
+#: includes/class-wpban-ai-crawlers.php:40
+#: includes/class-wpban-ai-crawlers.php:41
+msgid "Used by Meta (Facebook) to train AI products."
+msgstr "Meta (Facebook) 使用它来训练 AI 产品。"
+
+#: includes/class-wpban-ai-crawlers.php:42
+msgid "Used by OpenAI for their SearchGPT product."
+msgstr "OpenAI 将其用于其 SearchGPT 产品。"
+
+#: includes/class-wpban-ai-crawlers.php:43
+#: includes/class-wpban-ai-crawlers.php:44
+msgid "Used by Omgili to scrape data for AI training."
+msgstr "Omgili 使用它来抓取用于 AI 训练的数据。"
+
+#: includes/class-wpban-ai-crawlers.php:45
+msgid ""
+"Used by Huawei to download data for the Large Language Model (LLM) called "
+"PanGu."
+msgstr "华为使用它来下载名为 PanGu 的大型语言模型 (LLM) 的数据。"
+
+#: includes/class-wpban-ai-crawlers.php:46
+msgid "Used by Huawei to scrape data for AI training."
+msgstr "华为使用它来抓取数据以进行人工智能训练。"
+
+#: includes/class-wpban-ai-crawlers.php:47
+msgid "Used by Perplexity for their AI products."
+msgstr "被 Perplexity 用于其人工智能产品。"
+
+#: includes/class-wpban-ai-crawlers.php:48
+msgid "Blocks the Scrapy bot (used for scraping websites)."
+msgstr "阻止 Scrapy 机器人（用于抓取网站）。"
+
+#: includes/class-wpban-ai-crawlers.php:49
+msgid ""
+"Blocks the Semrush bot used to pull data into the Semrush platform. Data is "
+"used for their ContentShake AI tool."
+msgstr "阻止用于将数据拉入 Semrush 平台的 Semrush 机器人。数据用于他们的 ContentShake AI 工具。"
+
+#: includes/class-wpban-ai-crawlers.php:50
+#: includes/class-wpban-ai-crawlers.php:51
+msgid "Blocks the Semrush bot used to pull data into the Semrush platform."
+msgstr "阻止用于将数据拉入 Semrush 平台的 Semrush 机器人。"
+
+#: includes/class-wpban-ai-crawlers.php:52
+#: includes/class-wpban-ai-crawlers.php:53
+msgid "Used for sentiment analysis and AI training."
+msgstr "用于情感分析和人工智能训练。"
+
+#: includes/class-wpban-ai-crawlers.php:54
+msgid "Used by Timpi; likely for their Wilson AI Product."
+msgstr "由 Timpi 使用；可能是他们的 Wilson AI 产品。"
+
+#: includes/class-wpban-ai-crawlers.php:55
+msgid "Used by Turnitin to scrape data for plagiarism detection."
+msgstr "Turnitin 使用它来抓取数据以进行抄袭检测。"
+
+#: includes/class-wpban-ai-crawlers.php:56
+msgid "Used by You.com to train AI products."
+msgstr "由 You.com 用于训练 AI 产品。"
+
+#: includes/class-wpban-ai-crawlers.php:57
+msgid "Used by Webz.io for their social listening and intelligence platforms."
+msgstr "被 Webz.io 用于社交聆听和情报平台。"
+
+#: includes/class-wpban-ai-crawlers.php:58
+msgid "Used by Webz.io for AI training."
+msgstr "由 Webz.io 用于 AI 训练。"
+
+#: includes/class-wpban-anything.php:85 includes/class-wpban-security.php:540
+msgid "Link copied to clipboard!"
+msgstr "链接已复制到剪贴板！"
+
+#: includes/class-wpban-anything.php:97 includes/class-wpban-anything.php:98
+msgid "Ban Anything"
+msgstr "禁止任何事情"
+
+#: includes/class-wpban-anything.php:121
+msgid "Please use your system browser to open this site."
+msgstr "请使用您的系统浏览器打开本网站。"
+
+#: includes/class-wpban-anything.php:122 includes/class-wpban-templates.php:37
+msgid "Copy Link"
+msgstr "复制链接"
+
+#: includes/class-wpban-anything.php:189
+msgid "You do not have permission to access this page."
+msgstr "您没有访问此页面的权限。"
+
+#: includes/class-wpban-anything.php:195
+msgid "WPBan Anything Settings"
+msgstr "WPBan 任何设置"
+
+#: includes/class-wpban-anything.php:198
+msgid "Your Details"
+msgstr "您的详细信息"
+
+#: includes/class-wpban-anything.php:199
+msgid "Your current connection details."
+msgstr "您当前的连接详细信息。"
+
+#: includes/class-wpban-anything.php:202
+msgid "Host"
+msgstr "主持人"
+
+#: includes/class-wpban-anything.php:208
+msgid "Ban Settings"
+msgstr "禁止设置"
+
+#: includes/class-wpban-anything.php:215 includes/class-wpban-anything.php:232
+msgid "General Bans"
+msgstr "一般禁令"
+
+#: includes/class-wpban-anything.php:216 includes/class-wpban-anything.php:243
+msgid "Advanced Bans"
+msgstr "高级禁令"
+
+#: includes/class-wpban-anything.php:217 includes/class-wpban-anything.php:254
+#: includes/class-wpban-anything.php:411
+msgid "Login Restrictions"
+msgstr "登录限制"
+
+#: includes/class-wpban-anything.php:218 includes/class-wpban-anything.php:261
+msgid "Browser Bans"
+msgstr "浏览器禁令"
+
+#: includes/class-wpban-anything.php:219 includes/class-wpban-anything.php:272
+msgid "AI Bans"
+msgstr "人工智能禁令"
+
+#: includes/class-wpban-anything.php:220 includes/class-wpban-anything.php:324
+msgid "SEO Bans"
+msgstr "搜索引擎优化禁令"
+
+#: includes/class-wpban-anything.php:222 includes/class-wpban-anything.php:386
+msgid "Options"
+msgstr "选项"
+
+#: includes/class-wpban-anything.php:234
+msgid "Banned IPs (Use * for wildcards, e.g., 192.168.1.*):"
+msgstr "禁止的 IP（使用 * 表示通配符，例如 192.168.1.*）："
+
+#: includes/class-wpban-anything.php:236
+msgid "Banned IP Ranges (e.g., 192.168.1.1-192.168.1.255):"
+msgstr "禁止的 IP 范围（例如 192.168.1.1-192.168.1.255）："
+
+#: includes/class-wpban-anything.php:238
+msgid "Excluded IPs (e.g., 192.168.1.100):"
+msgstr "排除的 IP（例如 192.168.1.100）："
+
+#: includes/class-wpban-anything.php:245
+msgid "Banned Hosts (Use * for wildcards, e.g., *.com):"
+msgstr "禁止的主机（使用 * 表示通配符，例如 *.com）："
+
+#: includes/class-wpban-anything.php:247
+msgid "Banned Referers (e.g., http://*.example.com):"
+msgstr "禁止的推荐人（例如http://*.example.com):"
+
+#: includes/class-wpban-anything.php:249
+msgid "Banned User Agents (e.g., Bot*):"
+msgstr "禁止的用户代理（例如 Bot*）："
+
+#: includes/class-wpban-anything.php:256
+msgid "Allowed IPs for wp-login.php (e.g., 192.168.1.0/24):"
+msgstr "wp-login.php 允许的 IP（例如 192.168.1.0/24）："
+
+#: includes/class-wpban-anything.php:263
+msgid "Enable WeChat/QQ Ban"
+msgstr "启用微信/QQ 禁言"
+
+#: includes/class-wpban-anything.php:264
+msgid "Message:"
+msgstr "信息："
+
+#: includes/class-wpban-anything.php:266
+msgid "Copy Button Text:"
+msgstr "复制按钮文本："
+
+#: includes/class-wpban-anything.php:274 includes/class-wpban-anything.php:327
+msgid "Select All"
+msgstr "选择全部"
+
+#: includes/class-wpban-anything.php:275 includes/class-wpban-anything.php:328
+msgid "Select None"
+msgstr "选择无"
+
+#: includes/class-wpban-anything.php:279
+msgid "Search AI crawlers:"
+msgstr "搜索AI爬虫："
+
+#: includes/class-wpban-anything.php:280 includes/class-wpban-anything.php:336
+msgid "Search..."
+msgstr "搜索..."
+
+#: includes/class-wpban-anything.php:293 includes/class-wpban-anything.php:349
+msgid "Crawler"
+msgstr "履带式"
+
+#: includes/class-wpban-anything.php:294 includes/class-wpban-anything.php:350
+msgid "Description"
+msgstr "描述"
+
+#: includes/class-wpban-anything.php:295 includes/class-wpban-anything.php:351
+msgid "Risk"
+msgstr "风险"
+
+#: includes/class-wpban-anything.php:296 includes/class-wpban-anything.php:352
+msgid "Recommended"
+msgstr "受到推崇的"
+
+#: includes/class-wpban-anything.php:297 includes/class-wpban-anything.php:353
+msgid "Block"
+msgstr "堵塞"
+
+#: includes/class-wpban-anything.php:298 includes/class-wpban-anything.php:313
+#: includes/class-wpban-anything.php:354 includes/class-wpban-anything.php:369
+msgid "More Info"
+msgstr "更多信息"
+
+#: includes/class-wpban-anything.php:309
+msgid "Blocking may affect AI training datasets."
+msgstr "阻塞可能会影响人工智能训练数据集。"
+
+#: includes/class-wpban-anything.php:332
+msgid ""
+"Warning: Blocking major SEO crawlers (e.g., Googlebot, Bingbot) may reduce "
+"your site's visibility and traffic. Review recommendations before saving."
+msgstr "警告：阻止主要 SEO 爬虫（例如 Googlebot、Bingbot）可能会降低您网站的可见度和流量。保存前查看建议。"
+
+#: includes/class-wpban-anything.php:335
+msgid "Search SEO crawlers:"
+msgstr "搜索SEO爬虫："
+
+#: includes/class-wpban-anything.php:365
+msgid "Blocking may affect SEO rankings."
+msgstr "屏蔽可能会影响 SEO 排名。"
+
+#: includes/class-wpban-anything.php:381
+msgid "Message shown to banned users:"
+msgstr "向被禁止的用户显示的消息："
+
+#: includes/class-wpban-anything.php:388
+msgid "Use Reverse Proxy"
+msgstr "使用反向代理"
+
+#: includes/class-wpban-anything.php:392
+msgid "Save Changes"
+msgstr "保存更改"
+
+#: includes/class-wpban-anything.php:397
+msgid "Ban Statistics"
+msgstr "禁令统计"
+
+#: includes/class-wpban-anything.php:398
+msgid "View detailed ban attempt statistics."
+msgstr "查看详细的禁止尝试统计数据。"
+
+#: includes/class-wpban-anything.php:402
+msgid "Metric"
+msgstr "公制"
+
+#: includes/class-wpban-anything.php:403
+msgid "Value"
+msgstr "价值"
+
+#: includes/class-wpban-anything.php:407
+msgid "Total Ban Attempts"
+msgstr "全面禁止尝试"
+
+#: includes/class-wpban-anything.php:408
+msgid "Unique IPs Banned"
+msgstr "独特IP被禁止"
+
+#: includes/class-wpban-anything.php:409
+msgid "Last Ban Time"
+msgstr "最后封禁时间"
+
+#: includes/class-wpban-anything.php:409
+msgid "Never"
+msgstr "绝不"
+
+#: includes/class-wpban-anything.php:410
+msgid "IP Bans"
+msgstr "IP 禁令"
+
+#: includes/class-wpban-anything.php:412
+msgid "WeChat/QQ Bans"
+msgstr "微信/QQ 封禁"
+
+#: includes/class-wpban-anything.php:413
+msgid "AI Crawler Bans"
+msgstr "AI爬虫禁令"
+
+#: includes/class-wpban-anything.php:414
+msgid "SEO Crawler Bans"
+msgstr "SEO 爬虫禁令"
+
+#: includes/class-wpban-anything.php:415
+msgid "Recent Banned IPs"
+msgstr "最近被禁止的IP"
+
+#: includes/class-wpban-anything.php:419
+msgid "None"
+msgstr "没有任何"
+
+#: includes/class-wpban-anything.php:484
+msgid ""
+"You are about to block major SEO crawlers (e.g., Googlebot, Bingbot), which "
+"may reduce your site\\'s traffic. Are you sure?"
+msgstr "您即将阻止主要 SEO 抓取工具（例如 Googlebot、Bingbot），这可能会减少您网站的流量。你确定吗？"
+
+#: includes/class-wpban-anything.php:489
+msgid "Saving..."
+msgstr "保存..."
+
+#: includes/class-wpban-anything.php:506
+msgid "Failed to save settings."
+msgstr "无法保存设置。"
+
+#: includes/class-wpban-anything.php:512
+msgid "Server error occurred: "
+msgstr "服务器发生错误："
+
+#: includes/class-wpban-anything.php:544
+msgid "Invalid nonce."
+msgstr "无效的随机数。"
+
+#: includes/class-wpban-anything.php:547
+msgid "Permission denied."
+msgstr "没有权限。"
+
+#: includes/class-wpban-anything.php:552
+msgid "Settings saved."
+msgstr "设置已保存。"
+
+#: includes/class-wpban-security.php:100
+msgid "Too many requests. Please try again later."
+msgstr "请求太多。请稍后重试。"
+
+#: includes/class-wpban-security.php:133 includes/class-wpban-security.php:140
+msgid "Access denied from your location."
+msgstr "从您所在的位置访问被拒绝。"
+
+#: includes/class-wpban-security.php:439
+#, php-format
+msgid "[%s] Security Alert: %s"
+msgstr "[%s]安全警报：%s"
+
+#: includes/class-wpban-security.php:667 includes/class-wpban-templates.php:16
+msgid "Basic Protection"
+msgstr "基本防护"
+
+#: includes/class-wpban-security.php:668 includes/class-wpban-templates.php:17
+msgid "Essential security for most WordPress sites"
+msgstr "大多数 WordPress 网站的基本安全性"
+
+#: includes/class-wpban-security.php:679 includes/class-wpban-templates.php:27
+msgid "Strict Security"
+msgstr "严格的安全保障"
+
+#: includes/class-wpban-security.php:680
+msgid "Maximum protection with geo-blocking and rate limiting"
+msgstr "通过地理封锁和速率限制提供最大程度的保护"
+
+#: includes/class-wpban-security.php:696 includes/class-wpban-templates.php:45
+msgid "Content Protection"
+msgstr "内容保护"
+
+#: includes/class-wpban-security.php:697
+msgid "Protect content from AI and scraping"
+msgstr "保护内容免受人工智能和抓取的影响"
+
+#: includes/class-wpban-security.php:707
+msgid "Performance Mode"
+msgstr "表演模式"
+
+#: includes/class-wpban-security.php:708
+msgid "Balanced security with minimal performance impact"
+msgstr "平衡的安全性和最小的性能影响"
+
+#: includes/class-wpban-seo-crawlers.php:19
+msgid "Google's primary crawler for indexing web pages."
+msgstr "Google 用于索引网页的主要抓取工具。"
+
+#: includes/class-wpban-seo-crawlers.php:20
+msgid "Microsoft Bing's crawler for indexing web content."
+msgstr "Microsoft Bing 的用于索引 Web 内容的爬网程序。"
+
+#: includes/class-wpban-seo-crawlers.php:21
+msgid ""
+"Baidu's crawler for indexing content, primarily for the Chinese market."
+msgstr "百度用于索引内容的爬虫，主要针对中国市场。"
+
+#: includes/class-wpban-seo-crawlers.php:22
+msgid "Yandex's crawler for indexing web pages, used in Russia and beyond."
+msgstr "Yandex 用于索引网页的爬虫，在俄罗斯及其他地区使用。"
+
+#: includes/class-wpban-seo-crawlers.php:23
+msgid "DuckDuckGo's crawler for indexing privacy-focused search results."
+msgstr "DuckDuckGo 的爬虫，用于对注重隐私的搜索结果建立索引。"
+
+#: includes/class-wpban-seo-crawlers.php:24
+msgid "Yahoo's legacy crawler for indexing web content."
+msgstr "雅虎用于索引网络内容的传统爬虫。"
+
+#: includes/class-wpban-seo-crawlers.php:25
+msgid "Sogou's crawler for indexing content, popular in China."
+msgstr "搜狗用于索引内容的爬虫，在中国很受欢迎。"
+
+#: includes/class-wpban-seo-crawlers.php:26
+msgid "Exalead's crawler for indexing web pages, used by Dassault Systèmes."
+msgstr "Exalead 的用于索引网页的爬虫，由 Dassault Systèmes 使用。"
+
+#: includes/class-wpban-seo-crawlers.php:27
+msgid "Ahrefs' crawler for SEO analysis and backlink indexing."
+msgstr "Ahrefs 用于 SEO 分析和反向链接索引的爬虫。"
+
+#: includes/class-wpban-seo-crawlers.php:28
+msgid "Majestic's crawler for SEO and backlink analysis."
+msgstr "Majestic 的 SEO 和反向链接分析爬虫。"
+
+#: includes/class-wpban-seo-crawlers.php:29
+msgid "MauiBot is a web crawler used for data collection."
+msgstr "MauiBot 是一个用于数据收集的网络爬虫。"
+
+#: includes/class-wpban-seo-crawlers.php:30
+msgid "MegaIndex.ru is a Russian SEO tool crawler."
+msgstr "MegaIndex.ru 是一个俄罗斯 SEO 工具爬虫。"
+
+#: includes/class-wpban-seo-crawlers.php:31
+msgid "Bytedance's crawler for data collection."
+msgstr "字节跳动用于数据收集的爬虫。"
+
+#: includes/class-wpban-seo-crawlers.php:32
+msgid "SemrushBot is a crawler used by Semrush for SEO analysis."
+msgstr "SemrushBot 是 Semrush 用于 SEO 分析的爬虫。"
+
+#: includes/class-wpban-seo-crawlers.php:33
+msgid "User agent for older Windows operating systems (e.g., Windows XP)."
+msgstr "旧版 Windows 操作系统（例如 Windows XP）的用户代理。"
+
+#: includes/class-wpban-seo-crawlers.php:34
+msgid "BLEXBot is a web crawler used by WebMeUp for backlink analysis."
+msgstr "BLEXBot 是 WebMeUp 用于反向链接分析的网络爬虫。"
+
+#: includes/class-wpban-seo-crawlers.php:35
+msgid "DotBot is a web crawler used by Moz for SEO data collection."
+msgstr "DotBot 是 Moz 用于收集 SEO 数据的网络爬虫。"
+
+#: includes/class-wpban-seo-crawlers.php:36
+msgid "CocCocBot is a Vietnamese search engine crawler."
+msgstr "CocCocBot 是一个越南搜索引擎爬虫。"
+
+#: includes/class-wpban-seo-crawlers.php:37
+msgid "ImagesiftBot is a crawler used for image analysis."
+msgstr "ImagesiftBot 是一个用于图像分析的爬虫。"
+
+#: includes/class-wpban-seo-crawlers.php:38
+msgid "A common user agent for Java-based HTTP clients."
+msgstr "基于 Java 的 HTTP 客户端的通用用户代理。"
+
+#: includes/class-wpban-seo-crawlers.php:39
+msgid "User agent for Windows Vista, 7, 8, and 10."
+msgstr "适用于 Windows Vista、7、8 和 10 的用户代理。"
+
+#: includes/class-wpban-seo-crawlers.php:40
+msgid "User agent for macOS devices."
+msgstr "macOS 设备的用户代理。"
+
+#: includes/class-wpban-seo-crawlers.php:41
+msgid "User agent for Python-based web requests."
+msgstr "基于 Python 的 Web 请求的用户代理。"
+
+#: includes/class-wpban-seo-crawlers.php:42
+msgid "User agent for Fedora Linux systems."
+msgstr "Fedora Linux 系统的用户代理。"
+
+#: includes/class-wpban-seo-crawlers.php:43
+msgid "User agent for X11-based systems (e.g., Linux)."
+msgstr "基于 X11 的系统（例如 Linux）的用户代理。"
+
+#: includes/class-wpban-seo-crawlers.php:44
+msgid "User agent for 64-bit Windows on Windows (WOW64) systems."
+msgstr "Windows (WOW64) 系统上 64 位 Windows 的用户代理。"
+
+#: includes/class-wpban-templates.php:28
+msgid "Maximum protection with login restrictions"
+msgstr "通过登录限制提供最大程度的保护"
+
+#: includes/class-wpban-templates.php:35
+msgid "Browser Not Supported"
+msgstr "不支持浏览器"
+
+#: includes/class-wpban-templates.php:36
+msgid "Please use Chrome, Firefox, or Safari to access this site."
+msgstr "请使用 Chrome、Firefox 或 Safari 访问本网站。"
+
+#: includes/class-wpban-templates.php:46
+msgid "Protect original content from AI crawlers"
+msgstr "保护原创内容免遭人工智能爬虫攻击"
+
+#: includes/class-wpban-templates.php:59
+msgid "Membership Site"
+msgstr "会员网站"
+
+#: includes/class-wpban-templates.php:60
+msgid "Ideal for private or membership websites"
+msgstr "私人或会员网站的理想选择"
+
+#: includes/class-wpban-templates.php:73
+msgid "Development Mode"
+msgstr "发展模式"
+
+#: includes/class-wpban-templates.php:74
+msgid "Minimal restrictions for development sites"
+msgstr "对开发地点的最小限制"
+
+#: includes/functions.php:101
+msgid "OpenAI GPT Web Crawler"
+msgstr "OpenAI GPT 网络爬虫"
+
+#: includes/functions.php:102
+msgid "ChatGPT Browser Tool"
+msgstr "ChatGPT 浏览器工具"
+
+#: includes/functions.php:103
+msgid "OpenAI Search Bot"
+msgstr "OpenAI 搜索机器人"
+
+#: includes/functions.php:106
+msgid "Anthropic Claude Bot"
+msgstr "人类克劳德·博特"
+
+#: includes/functions.php:107
+msgid "Claude Web Browser"
+msgstr "克劳德网络浏览器"
+
+#: includes/functions.php:108
+msgid "Anthropic AI Crawler"
+msgstr "人择人工智能爬虫"
+
+#: includes/functions.php:111
+msgid "Google Bard/Gemini Bot"
+msgstr "谷歌吟游诗人/双子座机器人"
+
+#: includes/functions.php:114
+msgid "Microsoft Bing AI"
+msgstr "微软必应人工智能"
+
+#: includes/functions.php:117
+msgid "Meta/Facebook Bot"
+msgstr "元/Facebook 机器人"
+
+#: includes/functions.php:118
+msgid "Meta External Agent"
+msgstr "元外部代理"
+
+#: includes/functions.php:119
+msgid "Meta External Fetcher"
+msgstr "元外部获取器"
+
+#: includes/functions.php:122
+msgid "Common Crawl Dataset"
+msgstr "通用爬取数据集"
+
+#: includes/functions.php:123
+msgid "Perplexity AI Search"
+msgstr "困惑人工智能搜索"
+
+#: includes/functions.php:124
+msgid "You.com Search Bot"
+msgstr "You.com 搜索机器人"
+
+#: includes/functions.php:125
+msgid "ByteDance Spider"
+msgstr "字节跳动蜘蛛"
+
+#: includes/functions.php:126
+msgid "Cohere AI Bot"
+msgstr "Cohere人工智能机器人"
+
+#: includes/functions.php:127
+msgid "Diffbot Crawler"
+msgstr "Diffbot爬虫"
+
+#: includes/functions.php:128
+msgid "Amazon Alexa Bot"
+msgstr "亚马逊 Alexa 机器人"
+
+#: includes/functions.php:129
+msgid "Apple AI Bot"
+msgstr "苹果人工智能机器人"
+
+#: includes/functions.php:130
+msgid "Allen Institute AI"
+msgstr "艾伦人工智能研究所"
+
+#: includes/functions.php:131
+msgid "AI2 Dolma Dataset"
+msgstr "AI2卓玛数据集"
+
+#: includes/functions.php:132
+msgid "Webz.io Bot"
+msgstr "Webz.io 机器人"
+
+#: includes/functions.php:133
+msgid "Webz.io Crawler"
+msgstr "Webz.io 爬虫"
+
+#: includes/functions.php:134
+msgid "Image Analysis Bot"
+msgstr "图像分析机器人"
+
+#: includes/functions.php:135
+msgid "Huawei Petal Search"
+msgstr "华为花瓣搜索"
+
+#: includes/functions.php:139
+msgid "Google Search (DO NOT BLOCK)"
+msgstr "谷歌搜索（请勿屏蔽）"
+
+#: includes/functions.php:140
+msgid "Bing Search (DO NOT BLOCK)"
+msgstr "必应搜索（请勿阻止）"
+
+#: includes/functions.php:141
+msgid "Yahoo Search"
+msgstr "雅虎搜索"
+
+#: includes/functions.php:142
+msgid "DuckDuckGo Search"
+msgstr "DuckDuckGo 搜索"
+
+#: includes/functions.php:143
+msgid "Baidu Search (China)"
+msgstr "百度搜索（中国）"
+
+#: includes/functions.php:144
+msgid "Yandex Search (Russia)"
+msgstr "Yandex 搜索（俄罗斯）"
+
+#: includes/functions.php:147
+msgid "Ahrefs SEO Tool"
+msgstr "Ahrefs SEO 工具"
+
+#: includes/functions.php:148
+msgid "Semrush SEO Tool"
+msgstr "Semrush SEO 工具"
+
+#: includes/functions.php:149
+msgid "Majestic SEO Tool"
+msgstr "雄伟的 SEO 工具"
+
+#: includes/functions.php:150
+msgid "Moz SEO Tool"
+msgstr "Moz SEO 工具"
+
+#: includes/functions.php:151
+msgid "SEO Spider Tool"
+msgstr "SEO蜘蛛工具"
+
+#: includes/functions.php:154
+msgid "Internet Archive"
+msgstr "互联网档案馆"
+
+#: includes/functions.php:155
+msgid "Facebook Link Preview"
+msgstr "Facebook 链接预览"
+
+#: includes/functions.php:156
+msgid "LinkedIn Preview"
+msgstr "领英预览"
+
+#: includes/functions.php:157
+msgid "WhatsApp Link Preview"
+msgstr "WhatsApp 链接预览"
+
+#: includes/functions.php:158
+msgid "Twitter Link Preview"
+msgstr "Twitter 链接预览"
+
+#: includes/functions.php:168
+msgid "Afghanistan"
+msgstr "阿富汗"
+
+#: includes/functions.php:169
+msgid "Albania"
+msgstr "阿尔巴尼亚"
+
+#: includes/functions.php:170
+msgid "Algeria"
+msgstr "阿尔及利亚"
+
+#: includes/functions.php:171
+msgid "Argentina"
+msgstr "阿根廷"
+
+#: includes/functions.php:172
+msgid "Armenia"
+msgstr "亚美尼亚"
+
+#: includes/functions.php:173
+msgid "Australia"
+msgstr "澳大利亚"
+
+#: includes/functions.php:174
+msgid "Austria"
+msgstr "奥地利"
+
+#: includes/functions.php:175
+msgid "Azerbaijan"
+msgstr "阿塞拜疆"
+
+#: includes/functions.php:176
+msgid "Bangladesh"
+msgstr "孟加拉国"
+
+#: includes/functions.php:177
+msgid "Belarus"
+msgstr "白俄罗斯"
+
+#: includes/functions.php:178
+msgid "Belgium"
+msgstr "比利时"
+
+#: includes/functions.php:179
+msgid "Brazil"
+msgstr "巴西"
+
+#: includes/functions.php:180
+msgid "Bulgaria"
+msgstr "保加利亚"
+
+#: includes/functions.php:181
+msgid "Canada"
+msgstr "加拿大"
+
+#: includes/functions.php:182
+msgid "Chile"
+msgstr "智利"
+
+#: includes/functions.php:183
+msgid "China"
+msgstr "中国"
+
+#: includes/functions.php:184
+msgid "Colombia"
+msgstr "哥伦比亚"
+
+#: includes/functions.php:185
+msgid "Croatia"
+msgstr "克罗地亚"
+
+#: includes/functions.php:186
+msgid "Czech Republic"
+msgstr "捷克共和国"
+
+#: includes/functions.php:187
+msgid "Denmark"
+msgstr "丹麦"
+
+#: includes/functions.php:188
+msgid "Egypt"
+msgstr "埃及"
+
+#: includes/functions.php:189
+msgid "Estonia"
+msgstr "爱沙尼亚"
+
+#: includes/functions.php:190
+msgid "Finland"
+msgstr "芬兰"
+
+#: includes/functions.php:191
+msgid "France"
+msgstr "法国"
+
+#: includes/functions.php:192
+msgid "Georgia"
+msgstr "乔治亚州"
+
+#: includes/functions.php:193
+msgid "Germany"
+msgstr "德国"
+
+#: includes/functions.php:194
+msgid "Greece"
+msgstr "希腊"
+
+#: includes/functions.php:195
+msgid "Hong Kong"
+msgstr "香港"
+
+#: includes/functions.php:196
+msgid "Hungary"
+msgstr "匈牙利"
+
+#: includes/functions.php:197
+msgid "Iceland"
+msgstr "冰岛"
+
+#: includes/functions.php:198
+msgid "India"
+msgstr "印度"
+
+#: includes/functions.php:199
+msgid "Indonesia"
+msgstr "印度尼西亚"
+
+#: includes/functions.php:200
+msgid "Iran"
+msgstr "伊朗"
+
+#: includes/functions.php:201
+msgid "Iraq"
+msgstr "伊拉克"
+
+#: includes/functions.php:202
+msgid "Ireland"
+msgstr "爱尔兰"
+
+#: includes/functions.php:203
+msgid "Israel"
+msgstr "以色列"
+
+#: includes/functions.php:204
+msgid "Italy"
+msgstr "意大利"
+
+#: includes/functions.php:205
+msgid "Japan"
+msgstr "日本"
+
+#: includes/functions.php:206
+msgid "Kazakhstan"
+msgstr "哈萨克斯坦"
+
+#: includes/functions.php:207
+msgid "Kenya"
+msgstr "肯尼亚"
+
+#: includes/functions.php:208
+msgid "South Korea"
+msgstr "韩国"
+
+#: includes/functions.php:209
+msgid "Latvia"
+msgstr "拉脱维亚"
+
+#: includes/functions.php:210
+msgid "Lithuania"
+msgstr "立陶宛"
+
+#: includes/functions.php:211
+msgid "Malaysia"
+msgstr "马来西亚"
+
+#: includes/functions.php:212
+msgid "Mexico"
+msgstr "墨西哥"
+
+#: includes/functions.php:213
+msgid "Morocco"
+msgstr "摩洛哥"
+
+#: includes/functions.php:214
+msgid "Netherlands"
+msgstr "荷兰"
+
+#: includes/functions.php:215
+msgid "New Zealand"
+msgstr "新西兰"
+
+#: includes/functions.php:216
+msgid "Nigeria"
+msgstr "尼日利亚"
+
+#: includes/functions.php:217
+msgid "Norway"
+msgstr "挪威"
+
+#: includes/functions.php:218
+msgid "Pakistan"
+msgstr "巴基斯坦"
+
+#: includes/functions.php:219
+msgid "Peru"
+msgstr "秘鲁"
+
+#: includes/functions.php:220
+msgid "Philippines"
+msgstr "菲律宾"
+
+#: includes/functions.php:221
+msgid "Poland"
+msgstr "波兰"
+
+#: includes/functions.php:222
+msgid "Portugal"
+msgstr "葡萄牙"
+
+#: includes/functions.php:223
+msgid "Romania"
+msgstr "罗马尼亚"
+
+#: includes/functions.php:224
+msgid "Russia"
+msgstr "俄罗斯"
+
+#: includes/functions.php:225
+msgid "Saudi Arabia"
+msgstr "沙特阿拉伯"
+
+#: includes/functions.php:226
+msgid "Serbia"
+msgstr "塞尔维亚"
+
+#: includes/functions.php:227
+msgid "Singapore"
+msgstr "新加坡"
+
+#: includes/functions.php:228
+msgid "Slovakia"
+msgstr "斯洛伐克"
+
+#: includes/functions.php:229
+msgid "Slovenia"
+msgstr "斯洛文尼亚"
+
+#: includes/functions.php:230
+msgid "South Africa"
+msgstr "南非"
+
+#: includes/functions.php:231
+msgid "Spain"
+msgstr "西班牙"
+
+#: includes/functions.php:232
+msgid "Sweden"
+msgstr "瑞典"
+
+#: includes/functions.php:233
+msgid "Switzerland"
+msgstr "瑞士"
+
+#: includes/functions.php:234
+msgid "Taiwan"
+msgstr "台湾"
+
+#: includes/functions.php:235
+msgid "Thailand"
+msgstr "泰国"
+
+#: includes/functions.php:236
+msgid "Turkey"
+msgstr "火鸡"
+
+#: includes/functions.php:237
+msgid "Ukraine"
+msgstr "乌克兰"
+
+#: includes/functions.php:238
+msgid "United Arab Emirates"
+msgstr "阿拉伯联合酋长国"
+
+#: includes/functions.php:239
+msgid "United Kingdom"
+msgstr "英国"
+
+#: includes/functions.php:240
+msgid "United States"
+msgstr "美国"
+
+#: includes/functions.php:241
+msgid "Uzbekistan"
+msgstr "乌兹别克斯坦"
+
+#: includes/functions.php:242
+msgid "Venezuela"
+msgstr "委内瑞拉"
+
+#: includes/functions.php:243
+msgid "Vietnam"
+msgstr "越南"
+
+#: includes/functions.php:335
+msgid "IP Ban"
+msgstr "知识产权禁令"
+
+#: includes/functions.php:336
+msgid "Rate Limit"
+msgstr "速率限制"
+
+#: includes/functions.php:337
+msgid "Geo Block"
+msgstr "地理块"
+
+#: includes/functions.php:338
+msgid "Crawler Block"
+msgstr "履带块"
+
+#: includes/functions.php:340
+msgid "Brute Force"
+msgstr "暴力破解"

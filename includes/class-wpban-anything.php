@@ -82,7 +82,7 @@ class WPBan_Anything {
                 <script>
                 document.getElementById('wechat-qq-copy').addEventListener('click', function() {
                     navigator.clipboard.writeText(window.location.href).then(() => {
-                        alert('<?php _e("Link copied to clipboard!", "wpban-anything"); ?>');
+                        alert('<?php _e("Link copied to clipboard!", "wpban"); ?>');
                     });
                 });
                 document.body.style.overflow = 'hidden';
@@ -94,10 +94,10 @@ class WPBan_Anything {
 
     public function add_admin_menu() {
         $hook = add_options_page(
-            __('Ban Anything', 'wpban-anything'),
-            __('Ban Anything', 'wpban-anything'),
+            __('Ban Anything', 'wpban'),
+            __('Ban Anything', 'wpban'),
             'manage_options',
-            'wpban-anything',
+            'wpban',
             [$this, 'render_admin_page']
         );
         add_action("admin_print_scripts-{$hook}", function() {
@@ -118,8 +118,8 @@ class WPBan_Anything {
             'login_restrictions' => get_option('login_restrictions', ['allowed_ips' => []]),
             'wechat_qq_settings' => get_option('wechat_qq_settings', [
                 'enabled' => false,
-                'message' => __('Please use your system browser to open this site.', 'wpban-anything'),
-                'copy_text' => __('Copy Link', 'wpban-anything')
+                'message' => __('Please use your system browser to open this site.', 'wpban'),
+                'copy_text' => __('Copy Link', 'wpban')
             ]),
             'banned_stats' => get_option('banned_stats', [
                 'users' => [],
@@ -186,40 +186,40 @@ class WPBan_Anything {
 
     public function render_admin_page() {
         if (!current_user_can('manage_options')) {
-            wp_die(__('You do not have permission to access this page.', 'wpban-anything'));
+            wp_die(__('You do not have permission to access this page.', 'wpban'));
         }
 
         $options = $this->get_options();
         ?>
         <div class="wrap">
-            <h1><?php _e('WPBan Anything Settings', 'wpban-anything'); ?></h1>
+            <h1><?php _e('WPBan Anything Settings', 'wpban'); ?></h1>
 
             <div class="card">
-                <h2><?php _e('Your Details', 'wpban-anything'); ?></h2>
-                <p><?php _e('Your current connection details.', 'wpban-anything'); ?></p>
+                <h2><?php _e('Your Details', 'wpban'); ?></h2>
+                <p><?php _e('Your current connection details.', 'wpban'); ?></p>
                 <table class="wp-list-table widefat fixed">
-                    <tr><th><?php _e('IP', 'wpban-anything'); ?></th><td><?php echo ban_anything_get_ip(); ?></td></tr>
-                    <tr><th><?php _e('Host', 'wpban-anything'); ?></th><td><?php echo @gethostbyaddr(ban_anything_get_ip()); ?></td></tr>
-                    <tr><th><?php _e('User Agent', 'wpban-anything'); ?></th><td><?php echo esc_html($_SERVER['HTTP_USER_AGENT'] ?? 'Unknown'); ?></td></tr>
+                    <tr><th><?php _e('IP', 'wpban'); ?></th><td><?php echo ban_anything_get_ip(); ?></td></tr>
+                    <tr><th><?php _e('Host', 'wpban'); ?></th><td><?php echo @gethostbyaddr(ban_anything_get_ip()); ?></td></tr>
+                    <tr><th><?php _e('User Agent', 'wpban'); ?></th><td><?php echo esc_html($_SERVER['HTTP_USER_AGENT'] ?? 'Unknown'); ?></td></tr>
                 </table>
             </div>
 
             <div class="card">
-                <h2><?php _e('Ban Settings', 'wpban-anything'); ?></h2>
+                <h2><?php _e('Ban Settings', 'wpban'); ?></h2>
                 <span id="ban-save-status" class="notice" style="display:none; margin-top: 10px;"></span>
                 <form id="ban-settings-form" method="post">
                     <?php wp_nonce_field('wpban_anything_nonce', 'wpban_anything_nonce'); ?>
                     <div class="styles-sync-tabs">
                         <?php
                         $sections = [
-                            'general_bans' => ['title' => __('General Bans', 'wpban-anything'), 'desc' => __('Basic ban settings for IPs.')],
-                            'advanced_bans' => ['title' => __('Advanced Bans', 'wpban-anything'), 'desc' => __('Ban settings for hosts and agents.')],
-                            'login_restrictions' => ['title' => __('Login Restrictions', 'wpban-anything'), 'desc' => __('Restrict login page access.')],
-                            'browser_bans' => ['title' => __('Browser Bans', 'wpban-anything'), 'desc' => __('Ban specific browsers.')],
-                            'ai_bans' => ['title' => __('AI Bans', 'wpban-anything'), 'desc' => __('Block AI crawlers.')],
-                            'seo_bans' => ['title' => __('SEO Bans', 'wpban-anything'), 'desc' => __('Block SEO crawlers.')],
-                            'ban_message' => ['title' => __('Ban Message', 'wpban-anything'), 'desc' => __('Customize the ban message.')],
-                            'options' => ['title' => __('Options', 'wpban-anything'), 'desc' => __('Additional ban options.')],
+                            'general_bans' => ['title' => __('General Bans', 'wpban'), 'desc' => __('Basic ban settings for IPs.')],
+                            'advanced_bans' => ['title' => __('Advanced Bans', 'wpban'), 'desc' => __('Ban settings for hosts and agents.')],
+                            'login_restrictions' => ['title' => __('Login Restrictions', 'wpban'), 'desc' => __('Restrict login page access.')],
+                            'browser_bans' => ['title' => __('Browser Bans', 'wpban'), 'desc' => __('Ban specific browsers.')],
+                            'ai_bans' => ['title' => __('AI Bans', 'wpban'), 'desc' => __('Block AI crawlers.')],
+                            'seo_bans' => ['title' => __('SEO Bans', 'wpban'), 'desc' => __('Block SEO crawlers.')],
+                            'ban_message' => ['title' => __('Ban Message', 'wpban'), 'desc' => __('Customize the ban message.')],
+                            'options' => ['title' => __('Options', 'wpban'), 'desc' => __('Additional ban options.')],
                         ];
                         foreach ($sections as $key => $data): ?>
                             <button type="button" class="styles-tab <?php echo $key === 'general_bans' ? 'active' : ''; ?>" data-tab="<?php echo esc_attr($key); ?>">
@@ -229,55 +229,55 @@ class WPBan_Anything {
                     </div>
                     <div class="styles-sync-content">
                         <div class="postbox styles-section" data-section="general_bans" style="">
-                            <div class="postbox-header"><h2 class="hndle"><?php _e('General Bans', 'wpban-anything'); ?></h2></div>
+                            <div class="postbox-header"><h2 class="hndle"><?php _e('General Bans', 'wpban'); ?></h2></div>
                             <div class="inside">
-                                <p><?php _e('Banned IPs (Use * for wildcards, e.g., 192.168.1.*):', 'wpban-anything'); ?></p>
+                                <p><?php _e('Banned IPs (Use * for wildcards, e.g., 192.168.1.*):', 'wpban'); ?></p>
                                 <textarea name="banned_ips" rows="5" cols="50"><?php echo esc_textarea(implode("\n", $options['banned_ips'])); ?></textarea>
-                                <p><?php _e('Banned IP Ranges (e.g., 192.168.1.1-192.168.1.255):', 'wpban-anything'); ?></p>
+                                <p><?php _e('Banned IP Ranges (e.g., 192.168.1.1-192.168.1.255):', 'wpban'); ?></p>
                                 <textarea name="banned_ips_range" rows="5" cols="50"><?php echo esc_textarea(implode("\n", $options['banned_ips_range'])); ?></textarea>
-                                <p><?php _e('Excluded IPs (e.g., 192.168.1.100):', 'wpban-anything'); ?></p>
+                                <p><?php _e('Excluded IPs (e.g., 192.168.1.100):', 'wpban'); ?></p>
                                 <textarea name="banned_exclude_ips" rows="5" cols="50"><?php echo esc_textarea(implode("\n", $options['banned_exclude_ips'])); ?></textarea>
                             </div>
                         </div>
                         <div class="postbox styles-section" data-section="advanced_bans" style="display:none;">
-                            <div class="postbox-header"><h2 class="hndle"><?php _e('Advanced Bans', 'wpban-anything'); ?></h2></div>
+                            <div class="postbox-header"><h2 class="hndle"><?php _e('Advanced Bans', 'wpban'); ?></h2></div>
                             <div class="inside">
-                                <p><?php _e('Banned Hosts (Use * for wildcards, e.g., *.com):', 'wpban-anything'); ?></p>
+                                <p><?php _e('Banned Hosts (Use * for wildcards, e.g., *.com):', 'wpban'); ?></p>
                                 <textarea name="banned_hosts" rows="5" cols="50"><?php echo esc_textarea(implode("\n", $options['banned_hosts'])); ?></textarea>
-                                <p><?php _e('Banned Referers (e.g., http://*.example.com):', 'wpban-anything'); ?></p>
+                                <p><?php _e('Banned Referers (e.g., http://*.example.com):', 'wpban'); ?></p>
                                 <textarea name="banned_referers" rows="5" cols="50"><?php echo esc_textarea(implode("\n", $options['banned_referers'])); ?></textarea>
-                                <p><?php _e('Banned User Agents (e.g., Bot*):', 'wpban-anything'); ?></p>
+                                <p><?php _e('Banned User Agents (e.g., Bot*):', 'wpban'); ?></p>
                                 <textarea name="banned_user_agents" rows="5" cols="50"><?php echo esc_textarea(implode("\n", $options['banned_user_agents'])); ?></textarea>
                             </div>
                         </div>
                         <div class="postbox styles-section" data-section="login_restrictions" style="display:none;">
-                            <div class="postbox-header"><h2 class="hndle"><?php _e('Login Restrictions', 'wpban-anything'); ?></h2></div>
+                            <div class="postbox-header"><h2 class="hndle"><?php _e('Login Restrictions', 'wpban'); ?></h2></div>
                             <div class="inside">
-                                <p><?php _e('Allowed IPs for wp-login.php (e.g., 192.168.1.0/24):', 'wpban-anything'); ?></p>
+                                <p><?php _e('Allowed IPs for wp-login.php (e.g., 192.168.1.0/24):', 'wpban'); ?></p>
                                 <textarea name="login_allowed_ips" rows="5" cols="50"><?php echo esc_textarea(implode("\n", $options['login_restrictions']['allowed_ips'])); ?></textarea>
                             </div>
                         </div>
                         <div class="postbox styles-section" data-section="browser_bans" style="display:none;">
-                            <div class="postbox-header"><h2 class="hndle"><?php _e('Browser Bans', 'wpban-anything'); ?></h2></div>
+                            <div class="postbox-header"><h2 class="hndle"><?php _e('Browser Bans', 'wpban'); ?></h2></div>
                             <div class="inside">
-                                <label><input type="checkbox" name="wechat_qq_enabled" value="1" <?php checked($options['wechat_qq_settings']['enabled'], 1); ?>> <?php _e('Enable WeChat/QQ Ban', 'wpban-anything'); ?></label><br>
-                                <p><?php _e('Message:', 'wpban-anything'); ?></p>
+                                <label><input type="checkbox" name="wechat_qq_enabled" value="1" <?php checked($options['wechat_qq_settings']['enabled'], 1); ?>> <?php _e('Enable WeChat/QQ Ban', 'wpban'); ?></label><br>
+                                <p><?php _e('Message:', 'wpban'); ?></p>
                                 <textarea name="wechat_qq_message" rows="3" cols="50"><?php echo esc_textarea($options['wechat_qq_settings']['message']); ?></textarea><br>
-                                <p><?php _e('Copy Button Text:', 'wpban-anything'); ?></p>
+                                <p><?php _e('Copy Button Text:', 'wpban'); ?></p>
                                 <input type="text" name="wechat_qq_copy_text" value="<?php echo esc_attr($options['wechat_qq_settings']['copy_text']); ?>">
                             </div>
                         </div>
                         <div class="postbox styles-section" data-section="ai_bans" style="display:none;">
                             <div class="postbox-header">
-                                <h2 class="hndle"><?php _e('AI Bans', 'wpban-anything'); ?></h2>
+                                <h2 class="hndle"><?php _e('AI Bans', 'wpban'); ?></h2>
                                 <div class="handle-actions hide-if-no-js">
-                                    <button type="button" class="select-all button button-small" data-section="ai_bans"><?php _e('Select All', 'wpban-anything'); ?></button>
-                                    <button type="button" class="select-none button button-small" data-section="ai_bans"><?php _e('Select None', 'wpban-anything'); ?></button>
+                                    <button type="button" class="select-all button button-small" data-section="ai_bans"><?php _e('Select All', 'wpban'); ?></button>
+                                    <button type="button" class="select-none button button-small" data-section="ai_bans"><?php _e('Select None', 'wpban'); ?></button>
                                 </div>
                             </div>
                             <div class="inside">
-                                <p><?php _e('Search AI crawlers:', 'wpban-anything'); ?></p>
-                                <input type="text" id="ai-crawler-search" placeholder="<?php _e('Search...', 'wpban-anything'); ?>" style="width: 100%; margin-bottom: 10px;">
+                                <p><?php _e('Search AI crawlers:', 'wpban'); ?></p>
+                                <input type="text" id="ai-crawler-search" placeholder="<?php _e('Search...', 'wpban'); ?>" style="width: 100%; margin-bottom: 10px;">
                                 <?php
                                 $ai_groups = [
                                     'AI Training' => ['GPTBot', 'ChatGPT-User', 'ClaudeBot', 'anthropic-ai', 'cohere-ai', 'Bytespider'],
@@ -290,12 +290,12 @@ class WPBan_Anything {
                                         <table class="wp-list-table widefat fixed crawler-table" data-type="ai">
                                             <thead>
                                                 <tr>
-                                                    <th><?php _e('Crawler', 'wpban-anything'); ?></th>
-                                                    <th><?php _e('Description', 'wpban-anything'); ?></th>
-                                                    <th><?php _e('Risk', 'wpban-anything'); ?></th>
-                                                    <th><?php _e('Recommended', 'wpban-anything'); ?></th>
-                                                    <th><?php _e('Block', 'wpban-anything'); ?></th>
-                                                    <th><?php _e('More Info', 'wpban-anything'); ?></th>
+                                                    <th><?php _e('Crawler', 'wpban'); ?></th>
+                                                    <th><?php _e('Description', 'wpban'); ?></th>
+                                                    <th><?php _e('Risk', 'wpban'); ?></th>
+                                                    <th><?php _e('Recommended', 'wpban'); ?></th>
+                                                    <th><?php _e('Block', 'wpban'); ?></th>
+                                                    <th><?php _e('More Info', 'wpban'); ?></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -306,11 +306,11 @@ class WPBan_Anything {
                                                     ?>
                                                     <tr data-group="<?php echo esc_attr($group); ?>">
                                                         <td><?php echo esc_html($crawler); ?></td>
-                                                        <td><?php echo esc_html($info['description']); ?> <span class="dashicons dashicons-info" title="<?php echo esc_attr(__('Blocking may affect AI training datasets.', 'wpban-anything')); ?>"></span></td>
+                                                        <td><?php echo esc_html($info['description']); ?> <span class="dashicons dashicons-info" title="<?php echo esc_attr(__('Blocking may affect AI training datasets.', 'wpban')); ?>"></span></td>
                                                         <td><?php echo esc_html($risk); ?></td>
                                                         <td><?php echo esc_html($recommended); ?></td>
                                                         <td><input type="checkbox" name="ai_crawlers[]" value="<?php echo esc_attr($crawler); ?>" <?php checked(in_array($crawler, $options['ai_crawler_settings']['enabled_crawlers'])); ?> class="crawler-checkbox"></td>
-                                                        <td><a href="<?php echo esc_url($info['link']); ?>" target="_blank"><?php _e('More Info', 'wpban-anything'); ?></a></td>
+                                                        <td><a href="<?php echo esc_url($info['link']); ?>" target="_blank"><?php _e('More Info', 'wpban'); ?></a></td>
                                                     </tr>
                                                 <?php endforeach; ?>
                                             </tbody>
@@ -321,19 +321,19 @@ class WPBan_Anything {
                         </div>
                         <div class="postbox styles-section" data-section="seo_bans" style="display:none;">
                             <div class="postbox-header">
-                                <h2 class="hndle"><?php _e('SEO Bans', 'wpban-anything'); ?></h2>
+                                <h2 class="hndle"><?php _e('SEO Bans', 'wpban'); ?></h2>
 
                                 <div class="handle-actions hide-if-no-js">
-                                    <button type="button" class="select-all button button-small" data-section="seo_bans"><?php _e('Select All', 'wpban-anything'); ?></button>
-                                    <button type="button" class="select-none button button-small" data-section="seo_bans"><?php _e('Select None', 'wpban-anything'); ?></button>
+                                    <button type="button" class="select-all button button-small" data-section="seo_bans"><?php _e('Select All', 'wpban'); ?></button>
+                                    <button type="button" class="select-none button button-small" data-section="seo_bans"><?php _e('Select None', 'wpban'); ?></button>
                                 </div>
                             </div>
                             <div class="notice notice-warning" style="margin-bottom: 15px;">
-                                <p><?php _e('Warning: Blocking major SEO crawlers (e.g., Googlebot, Bingbot) may reduce your site\'s visibility and traffic. Review recommendations before saving.', 'wpban-anything'); ?></p>
+                                <p><?php _e('Warning: Blocking major SEO crawlers (e.g., Googlebot, Bingbot) may reduce your site\'s visibility and traffic. Review recommendations before saving.', 'wpban'); ?></p>
                             </div>
                             <div class="inside">
-                                <p><?php _e('Search SEO crawlers:', 'wpban-anything'); ?></p>
-                                <input type="text" id="seo-crawler-search" placeholder="<?php _e('Search...', 'wpban-anything'); ?>" style="width: 100%; margin-bottom: 10px;">
+                                <p><?php _e('Search SEO crawlers:', 'wpban'); ?></p>
+                                <input type="text" id="seo-crawler-search" placeholder="<?php _e('Search...', 'wpban'); ?>" style="width: 100%; margin-bottom: 10px;">
                                 <?php
                                 $seo_groups = [
                                     'Major Search Engines' => ['Googlebot', 'Bingbot', 'YandexBot', 'Baiduspider'],
@@ -346,12 +346,12 @@ class WPBan_Anything {
                                         <table class="wp-list-table widefat fixed crawler-table" data-type="seo">
                                             <thead>
                                                 <tr>
-                                                    <th><?php _e('Crawler', 'wpban-anything'); ?></th>
-                                                    <th><?php _e('Description', 'wpban-anything'); ?></th>
-                                                    <th><?php _e('Risk', 'wpban-anything'); ?></th>
-                                                    <th><?php _e('Recommended', 'wpban-anything'); ?></th>
-                                                    <th><?php _e('Block', 'wpban-anything'); ?></th>
-                                                    <th><?php _e('More Info', 'wpban-anything'); ?></th>
+                                                    <th><?php _e('Crawler', 'wpban'); ?></th>
+                                                    <th><?php _e('Description', 'wpban'); ?></th>
+                                                    <th><?php _e('Risk', 'wpban'); ?></th>
+                                                    <th><?php _e('Recommended', 'wpban'); ?></th>
+                                                    <th><?php _e('Block', 'wpban'); ?></th>
+                                                    <th><?php _e('More Info', 'wpban'); ?></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -362,11 +362,11 @@ class WPBan_Anything {
                                                     ?>
                                                     <tr data-group="<?php echo esc_attr($group); ?>">
                                                         <td><?php echo esc_html($crawler); ?></td>
-                                                        <td><?php echo esc_html($info['description']); ?> <span class="dashicons dashicons-info" title="<?php echo esc_attr(__('Blocking may affect SEO rankings.', 'wpban-anything')); ?>"></span></td>
+                                                        <td><?php echo esc_html($info['description']); ?> <span class="dashicons dashicons-info" title="<?php echo esc_attr(__('Blocking may affect SEO rankings.', 'wpban')); ?>"></span></td>
                                                         <td><?php echo esc_html($risk); ?></td>
                                                         <td><?php echo esc_html($recommended); ?></td>
                                                         <td><input type="checkbox" name="seo_crawlers[]" value="<?php echo esc_attr($crawler); ?>" <?php checked(in_array($crawler, $options['seo_crawler_settings']['enabled_crawlers'])); ?> class="crawler-checkbox"></td>
-                                                        <td><a href="<?php echo esc_url($info['link']); ?>" target="_blank"><?php _e('More Info', 'wpban-anything'); ?></a></td>
+                                                        <td><a href="<?php echo esc_url($info['link']); ?>" target="_blank"><?php _e('More Info', 'wpban'); ?></a></td>
                                                     </tr>
                                                 <?php endforeach; ?>
                                             </tbody>
@@ -376,47 +376,47 @@ class WPBan_Anything {
                             </div>
                         </div>
                         <div class="postbox styles-section" data-section="ban_message" style="display:none;">
-                            <div class="postbox-header"><h2 class="hndle"><?php _e('Ban Message', 'wpban-anything'); ?></h2></div>
+                            <div class="postbox-header"><h2 class="hndle"><?php _e('Ban Message', 'wpban'); ?></h2></div>
                             <div class="inside">
-                                <p><?php _e('Message shown to banned users:', 'wpban-anything'); ?></p>
+                                <p><?php _e('Message shown to banned users:', 'wpban'); ?></p>
                                 <textarea name="banned_message" rows="10" style="width:100%;"><?php echo esc_textarea($options['banned_message']); ?></textarea>
                             </div>
                         </div>
                         <div class="postbox styles-section" data-section="options" style="display:none;">
-                            <div class="postbox-header"><h2 class="hndle"><?php _e('Options', 'wpban-anything'); ?></h2></div>
+                            <div class="postbox-header"><h2 class="hndle"><?php _e('Options', 'wpban'); ?></h2></div>
                             <div class="inside">
-                                <p><label><input type="checkbox" name="reverse_proxy" value="1" <?php checked($options['banned_options']['reverse_proxy'], 1); ?>> <?php _e('Use Reverse Proxy', 'wpban-anything'); ?></label></p>
+                                <p><label><input type="checkbox" name="reverse_proxy" value="1" <?php checked($options['banned_options']['reverse_proxy'], 1); ?>> <?php _e('Use Reverse Proxy', 'wpban'); ?></label></p>
                             </div>
                         </div>
                     </div>
-                    <p class="submit"><button type="button" id="ban-save-settings" class="button button-primary"><?php _e('Save Changes', 'wpban-anything'); ?></button></p>
+                    <p class="submit"><button type="button" id="ban-save-settings" class="button button-primary"><?php _e('Save Changes', 'wpban'); ?></button></p>
                 </form>
             </div>
 
             <div class="card">
-                <h2><?php _e('Ban Statistics', 'wpban-anything'); ?></h2>
-                <p><?php _e('View detailed ban attempt statistics.', 'wpban-anything'); ?></p>
+                <h2><?php _e('Ban Statistics', 'wpban'); ?></h2>
+                <p><?php _e('View detailed ban attempt statistics.', 'wpban'); ?></p>
                 <table class="wp-list-table widefat fixed">
                     <thead>
                         <tr>
-                            <th><?php _e('Metric', 'wpban-anything'); ?></th>
-                            <th><?php _e('Value', 'wpban-anything'); ?></th>
+                            <th><?php _e('Metric', 'wpban'); ?></th>
+                            <th><?php _e('Value', 'wpban'); ?></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><th><?php _e('Total Ban Attempts', 'wpban-anything'); ?></th><td><?php echo esc_html($options['banned_stats']['total_count']); ?></td></tr>
-                        <tr><th><?php _e('Unique IPs Banned', 'wpban-anything'); ?></th><td><?php echo esc_html(count($options['banned_stats']['users'])); ?></td></tr>
-                        <tr><th><?php _e('Last Ban Time', 'wpban-anything'); ?></th><td><?php echo esc_html($options['banned_stats']['last_ban_time'] ?? __('Never', 'wpban-anything')); ?></td></tr>
-                        <tr><th><?php _e('IP Bans', 'wpban-anything'); ?></th><td><?php echo esc_html($options['banned_stats']['types']['ip_ban']); ?></td></tr>
-                        <tr><th><?php _e('Login Restrictions', 'wpban-anything'); ?></th><td><?php echo esc_html($options['banned_stats']['types']['login_restriction']); ?></td></tr>
-                        <tr><th><?php _e('WeChat/QQ Bans', 'wpban-anything'); ?></th><td><?php echo esc_html($options['banned_stats']['types']['wechat_qq_block']); ?></td></tr>
-                        <tr><th><?php _e('AI Crawler Bans', 'wpban-anything'); ?></th><td><?php echo esc_html($options['banned_stats']['types']['ai_crawler_block']); ?></td></tr>
-                        <tr><th><?php _e('SEO Crawler Bans', 'wpban-anything'); ?></th><td><?php echo esc_html($options['banned_stats']['types']['seo_crawler_block']); ?></td></tr>
-                        <tr><th><?php _e('Recent Banned IPs', 'wpban-anything'); ?></th><td>
+                        <tr><th><?php _e('Total Ban Attempts', 'wpban'); ?></th><td><?php echo esc_html($options['banned_stats']['total_count']); ?></td></tr>
+                        <tr><th><?php _e('Unique IPs Banned', 'wpban'); ?></th><td><?php echo esc_html(count($options['banned_stats']['users'])); ?></td></tr>
+                        <tr><th><?php _e('Last Ban Time', 'wpban'); ?></th><td><?php echo esc_html($options['banned_stats']['last_ban_time'] ?? __('Never', 'wpban')); ?></td></tr>
+                        <tr><th><?php _e('IP Bans', 'wpban'); ?></th><td><?php echo esc_html($options['banned_stats']['types']['ip_ban']); ?></td></tr>
+                        <tr><th><?php _e('Login Restrictions', 'wpban'); ?></th><td><?php echo esc_html($options['banned_stats']['types']['login_restriction']); ?></td></tr>
+                        <tr><th><?php _e('WeChat/QQ Bans', 'wpban'); ?></th><td><?php echo esc_html($options['banned_stats']['types']['wechat_qq_block']); ?></td></tr>
+                        <tr><th><?php _e('AI Crawler Bans', 'wpban'); ?></th><td><?php echo esc_html($options['banned_stats']['types']['ai_crawler_block']); ?></td></tr>
+                        <tr><th><?php _e('SEO Crawler Bans', 'wpban'); ?></th><td><?php echo esc_html($options['banned_stats']['types']['seo_crawler_block']); ?></td></tr>
+                        <tr><th><?php _e('Recent Banned IPs', 'wpban'); ?></th><td>
                             <?php
                             $recent = array_slice($options['banned_stats']['users'], -5, 5, true);
                             if (empty($recent)) {
-                                echo __('None', 'wpban-anything');
+                                echo __('None', 'wpban');
                             } else {
                                 foreach ($recent as $ip => $data) {
                                     echo esc_html("$ip ({$data['count']} times, last: {$data['last_time']}, type: {$data['type']})<br>");
@@ -481,12 +481,12 @@ class WPBan_Anything {
                     // Check for critical SEO crawlers
                     var criticalCrawlers = ['Googlebot', 'Bingbot'];
                     var blockingCritical = criticalCrawlers.some(crawler => settings['seo_crawlers'] && settings['seo_crawlers'].includes(crawler));
-                    if (blockingCritical && !confirm('<?php _e("You are about to block major SEO crawlers (e.g., Googlebot, Bingbot), which may reduce your site\'s traffic. Are you sure?", "wpban-anything"); ?>')) {
+                    if (blockingCritical && !confirm('<?php _e("You are about to block major SEO crawlers (e.g., Googlebot, Bingbot), which may reduce your site\'s traffic. Are you sure?", "wpban"); ?>')) {
                         return;
                     }
 
                     $button.prop('disabled', true);
-                    $('#ban-save-status').text('<?php _e("Saving...", "wpban-anything"); ?>').show();
+                    $('#ban-save-status').text('<?php _e("Saving...", "wpban"); ?>').show();
 
                     $.ajax({
                         url: ajaxurl,
@@ -499,17 +499,17 @@ class WPBan_Anything {
                         success: function(response) {
                             if (response.success) {
                                 $('#ban-save-status').removeClass('notice-error').addClass('notice-success')
-                                    .text('<?php _e("Settings saved successfully!", "wpban-anything"); ?>')
+                                    .text('<?php _e("Settings saved successfully!", "wpban"); ?>')
                                     .delay(3000).fadeOut();
                             } else {
                                 $('#ban-save-status').removeClass('notice-success').addClass('notice-error')
-                                    .text(response.data || '<?php _e("Failed to save settings.", "wpban-anything"); ?>');
+                                    .text(response.data || '<?php _e("Failed to save settings.", "wpban"); ?>');
                             }
                             $button.prop('disabled', false);
                         },
                         error: function(xhr, status, error) {
                             $('#ban-save-status').removeClass('notice-success').addClass('notice-error')
-                                .text('<?php _e("Server error occurred: ", "wpban-anything"); ?>' + error);
+                                .text('<?php _e("Server error occurred: ", "wpban"); ?>' + error);
                             $button.prop('disabled', false);
                         }
                     });
@@ -541,15 +541,15 @@ class WPBan_Anything {
 
     public function ajax_save_settings() {
         if (!check_ajax_referer('wpban_anything_nonce', '_ajax_nonce', false)) {
-            wp_send_json_error(__('Invalid nonce.', 'wpban-anything'));
+            wp_send_json_error(__('Invalid nonce.', 'wpban'));
         }
         if (!current_user_can('manage_options')) {
-            wp_send_json_error(__('Permission denied.', 'wpban-anything'));
+            wp_send_json_error(__('Permission denied.', 'wpban'));
         }
 
         $settings = isset($_POST['settings']) ? wp_unslash((array)$_POST['settings']) : [];
         $this->save_options($settings);
-        wp_send_json_success(['message' => __('Settings saved.', 'wpban-anything')]);
+        wp_send_json_success(['message' => __('Settings saved.', 'wpban')]);
     }
 
     public function preview_banned_message() {
