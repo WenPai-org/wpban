@@ -736,8 +736,16 @@ msgstr ""
 msgid "General Bans"
 msgstr ""
 
+#: includes/class-wpban-anything.php:215
+msgid "Basic ban settings for IPs."
+msgstr ""
+
 #: includes/class-wpban-anything.php:216 includes/class-wpban-anything.php:243
 msgid "Advanced Bans"
+msgstr ""
+
+#: includes/class-wpban-anything.php:216
+msgid "Ban settings for hosts and agents."
 msgstr ""
 
 #: includes/class-wpban-anything.php:217 includes/class-wpban-anything.php:254
@@ -745,20 +753,44 @@ msgstr ""
 msgid "Login Restrictions"
 msgstr ""
 
+#: includes/class-wpban-anything.php:217
+msgid "Restrict login page access."
+msgstr ""
+
 #: includes/class-wpban-anything.php:218 includes/class-wpban-anything.php:261
 msgid "Browser Bans"
+msgstr ""
+
+#: includes/class-wpban-anything.php:218
+msgid "Ban specific browsers."
 msgstr ""
 
 #: includes/class-wpban-anything.php:219 includes/class-wpban-anything.php:272
 msgid "AI Bans"
 msgstr ""
 
+#: includes/class-wpban-anything.php:219
+msgid "Block AI crawlers."
+msgstr ""
+
 #: includes/class-wpban-anything.php:220 includes/class-wpban-anything.php:324
 msgid "SEO Bans"
 msgstr ""
 
+#: includes/class-wpban-anything.php:220
+msgid "Block SEO crawlers."
+msgstr ""
+
+#: includes/class-wpban-anything.php:221
+msgid "Customize the ban message."
+msgstr ""
+
 #: includes/class-wpban-anything.php:222 includes/class-wpban-anything.php:386
 msgid "Options"
+msgstr ""
+
+#: includes/class-wpban-anything.php:222
+msgid "Additional ban options."
 msgstr ""
 
 #: includes/class-wpban-anything.php:234
@@ -931,7 +963,7 @@ msgstr ""
 #: includes/class-wpban-anything.php:484
 msgid ""
 "You are about to block major SEO crawlers (e.g., Googlebot, Bingbot), which "
-"may reduce your site\\'s traffic. Are you sure?"
+"may reduce your site's traffic. Are you sure?"
 msgstr ""
 
 #: includes/class-wpban-anything.php:489
@@ -943,7 +975,7 @@ msgid "Failed to save settings."
 msgstr ""
 
 #: includes/class-wpban-anything.php:512
-msgid "Server error occurred: "
+msgid "Server error occurred:"
 msgstr ""
 
 #: includes/class-wpban-anything.php:544

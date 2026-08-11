@@ -212,14 +212,14 @@ class WPBan_Anything {
                     <div class="styles-sync-tabs">
                         <?php
                         $sections = [
-                            'general_bans' => ['title' => __('General Bans', 'wpban'), 'desc' => __('Basic ban settings for IPs.')],
-                            'advanced_bans' => ['title' => __('Advanced Bans', 'wpban'), 'desc' => __('Ban settings for hosts and agents.')],
-                            'login_restrictions' => ['title' => __('Login Restrictions', 'wpban'), 'desc' => __('Restrict login page access.')],
-                            'browser_bans' => ['title' => __('Browser Bans', 'wpban'), 'desc' => __('Ban specific browsers.')],
-                            'ai_bans' => ['title' => __('AI Bans', 'wpban'), 'desc' => __('Block AI crawlers.')],
-                            'seo_bans' => ['title' => __('SEO Bans', 'wpban'), 'desc' => __('Block SEO crawlers.')],
-                            'ban_message' => ['title' => __('Ban Message', 'wpban'), 'desc' => __('Customize the ban message.')],
-                            'options' => ['title' => __('Options', 'wpban'), 'desc' => __('Additional ban options.')],
+                            'general_bans' => ['title' => __('General Bans', 'wpban'), 'desc' => __('Basic ban settings for IPs.', 'wpban')],
+                            'advanced_bans' => ['title' => __('Advanced Bans', 'wpban'), 'desc' => __('Ban settings for hosts and agents.', 'wpban')],
+                            'login_restrictions' => ['title' => __('Login Restrictions', 'wpban'), 'desc' => __('Restrict login page access.', 'wpban')],
+                            'browser_bans' => ['title' => __('Browser Bans', 'wpban'), 'desc' => __('Ban specific browsers.', 'wpban')],
+                            'ai_bans' => ['title' => __('AI Bans', 'wpban'), 'desc' => __('Block AI crawlers.', 'wpban')],
+                            'seo_bans' => ['title' => __('SEO Bans', 'wpban'), 'desc' => __('Block SEO crawlers.', 'wpban')],
+                            'ban_message' => ['title' => __('Ban Message', 'wpban'), 'desc' => __('Customize the ban message.', 'wpban')],
+                            'options' => ['title' => __('Options', 'wpban'), 'desc' => __('Additional ban options.', 'wpban')],
                         ];
                         foreach ($sections as $key => $data): ?>
                             <button type="button" class="styles-tab <?php echo $key === 'general_bans' ? 'active' : ''; ?>" data-tab="<?php echo esc_attr($key); ?>">
@@ -329,7 +329,7 @@ class WPBan_Anything {
                                 </div>
                             </div>
                             <div class="notice notice-warning" style="margin-bottom: 15px;">
-                                <p><?php _e('Warning: Blocking major SEO crawlers (e.g., Googlebot, Bingbot) may reduce your site\'s visibility and traffic. Review recommendations before saving.', 'wpban'); ?></p>
+                                <p><?php _e("Warning: Blocking major SEO crawlers (e.g., Googlebot, Bingbot) may reduce your site's visibility and traffic. Review recommendations before saving.", "wpban"); ?></p>
                             </div>
                             <div class="inside">
                                 <p><?php _e('Search SEO crawlers:', 'wpban'); ?></p>
@@ -481,7 +481,7 @@ class WPBan_Anything {
                     // Check for critical SEO crawlers
                     var criticalCrawlers = ['Googlebot', 'Bingbot'];
                     var blockingCritical = criticalCrawlers.some(crawler => settings['seo_crawlers'] && settings['seo_crawlers'].includes(crawler));
-                    if (blockingCritical && !confirm('<?php _e("You are about to block major SEO crawlers (e.g., Googlebot, Bingbot), which may reduce your site\'s traffic. Are you sure?", "wpban"); ?>')) {
+                    if (blockingCritical && !confirm('<?php _e("You are about to block major SEO crawlers (e.g., Googlebot, Bingbot), which may reduce your site's traffic. Are you sure?", "wpban"); ?>')) {
                         return;
                     }
 
@@ -509,7 +509,7 @@ class WPBan_Anything {
                         },
                         error: function(xhr, status, error) {
                             $('#ban-save-status').removeClass('notice-success').addClass('notice-error')
-                                .text('<?php _e("Server error occurred: ", "wpban"); ?>' + error);
+                                .text('<?php _e("Server error occurred:", "wpban"); ?>' + error);
                             $button.prop('disabled', false);
                         }
                     });

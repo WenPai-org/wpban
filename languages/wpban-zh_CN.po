@@ -2,6 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wpban\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpban\n"
 "POT-Creation-Date: 2026-08-12 00:00+0000\n"
 "PO-Revision-Date: 2026-08-12 00:00+0000\n"
 "Last-Translator: WenPai Localization Team\n"
@@ -735,30 +736,62 @@ msgstr "禁止设置"
 msgid "General Bans"
 msgstr "一般禁令"
 
+#: includes/class-wpban-anything.php:215
+msgid "Basic ban settings for IPs."
+msgstr "IP 的基本禁止设置。"
+
 #: includes/class-wpban-anything.php:216 includes/class-wpban-anything.php:243
 msgid "Advanced Bans"
 msgstr "高级禁令"
+
+#: includes/class-wpban-anything.php:216
+msgid "Ban settings for hosts and agents."
+msgstr "主机和代理的禁止设置。"
 
 #: includes/class-wpban-anything.php:217 includes/class-wpban-anything.php:254
 #: includes/class-wpban-anything.php:411
 msgid "Login Restrictions"
 msgstr "登录限制"
 
+#: includes/class-wpban-anything.php:217
+msgid "Restrict login page access."
+msgstr "限制登录页面访问。"
+
 #: includes/class-wpban-anything.php:218 includes/class-wpban-anything.php:261
 msgid "Browser Bans"
 msgstr "浏览器禁令"
+
+#: includes/class-wpban-anything.php:218
+msgid "Ban specific browsers."
+msgstr "禁止特定浏览器。"
 
 #: includes/class-wpban-anything.php:219 includes/class-wpban-anything.php:272
 msgid "AI Bans"
 msgstr "人工智能禁令"
 
+#: includes/class-wpban-anything.php:219
+msgid "Block AI crawlers."
+msgstr "阻止人工智能爬虫。"
+
 #: includes/class-wpban-anything.php:220 includes/class-wpban-anything.php:324
 msgid "SEO Bans"
 msgstr "搜索引擎优化禁令"
 
+#: includes/class-wpban-anything.php:220
+msgid "Block SEO crawlers."
+msgstr "阻止 SEO 爬虫。"
+
+#: includes/class-wpban-anything.php:221
+msgid "Customize the ban message."
+msgstr "自定义禁止消息。"
+
 #: includes/class-wpban-anything.php:222 includes/class-wpban-anything.php:386
 msgid "Options"
 msgstr "选项"
+
+#: includes/class-wpban-anything.php:222
+msgid "Additional ban options."
+msgstr "额外的禁止选项。"
 
 #: includes/class-wpban-anything.php:234
 msgid "Banned IPs (Use * for wildcards, e.g., 192.168.1.*):"
@@ -930,7 +963,7 @@ msgstr "没有任何"
 #: includes/class-wpban-anything.php:484
 msgid ""
 "You are about to block major SEO crawlers (e.g., Googlebot, Bingbot), which "
-"may reduce your site\\'s traffic. Are you sure?"
+"may reduce your site's traffic. Are you sure?"
 msgstr "您即将阻止主要 SEO 抓取工具（例如 Googlebot、Bingbot），这可能会减少您网站的流量。你确定吗？"
 
 #: includes/class-wpban-anything.php:489
@@ -942,7 +975,7 @@ msgid "Failed to save settings."
 msgstr "无法保存设置。"
 
 #: includes/class-wpban-anything.php:512
-msgid "Server error occurred: "
+msgid "Server error occurred:"
 msgstr "服务器发生错误："
 
 #: includes/class-wpban-anything.php:544
